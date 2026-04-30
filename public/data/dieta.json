@@ -1,0 +1,70 @@
+{
+  "super": [
+    {
+      "category": "Proteínas",
+      "items": [
+        "1 Cartera de huevos (30 piezas)",
+        "1.5 kg a 2 kg de pollo (pechuga o pierna y muslo deshuesados)",
+        "4 a 5 latas de atún en agua (o soya texturizada)"
+      ]
+    },
+    {
+      "category": "Carbohidratos",
+      "items": [
+        "1 kg de Avena en hojuelas",
+        "1 kg de Arroz blanco o integral",
+        "1 kg de Frijoles o Lentejas",
+        "1 paquete de tortillas de maíz"
+      ]
+    },
+    {
+      "category": "Grasas",
+      "items": [
+        "1 bote de crema de cacahuate (solo cacahuate tostado)"
+      ]
+    },
+    {
+      "category": "Frutas y Verduras",
+      "items": [
+        "2 kg de Plátanos",
+        "Verduras de temporada (calabacitas, zanahorias, espinacas, brócoli)"
+      ]
+    }
+  ],
+  "menu": [
+    {
+      "meal": "Desayuno",
+      "type": "Rápido y calórico",
+      "items": [
+        "4 huevos revueltos (opcional: agregar espinaca o tomate)",
+        "3 tortillas de maíz",
+        "1 plato de avena (preparada con agua) con 1 plátano rebanado y 1 cucharada grande de crema de cacahuate"
+      ]
+    },
+    {
+      "meal": "Comida",
+      "type": "Fácil de llevar o recalentar",
+      "items": [
+        "150g a 200g de pollo a la plancha",
+        "1 taza de arroz cocido",
+        "1/2 taza de frijoles o lentejas",
+        "Verduras al vapor o salteadas"
+      ]
+    },
+    {
+      "meal": "Cena",
+      "type": "Post-Entrenamiento",
+      "items": [
+        "2 latas de atún en agua con verduras picadas (cebolla, tomate, chile) y aguacate/aceite de oliva",
+        "Tostadas horneadas o galletas saladas"
+      ]
+    },
+    {
+      "meal": "Snack",
+      "type": "Entre comidas (Opcional)",
+      "items": [
+        "1 plátano con crema de cacahuate"
+      ]
+    }
+  ]
+}

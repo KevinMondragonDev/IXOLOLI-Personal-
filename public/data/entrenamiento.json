@@ -1,0 +1,53 @@
+[
+  {
+    "day": "Lunes",
+    "focus": "Empuje (Pecho y Tríceps)",
+    "exercises": [
+      { "name": "Flexiones con Chaleco", "sets": "4", "reps": "fallo técnico (baja lento, sube explosivo)" },
+      { "name": "Press Militar (Pesa Rusa)", "sets": "4", "reps": "10 por brazo" },
+      { "name": "Flexiones Diamante", "sets": "3", "reps": "12 (tríceps)" },
+      { "name": "Fondos en banco o silla", "sets": "3", "reps": "15 (pecho bajo)" }
+    ]
+  },
+  {
+    "day": "Martes",
+    "focus": "Tracción (Espalda y Bíceps)",
+    "exercises": [
+      { "name": "Remo a una mano (Pesa Rusa)", "sets": "4", "reps": "12 por lado" },
+      { "name": "Remo 'Gorila'", "sets": "4", "reps": "16 totales (alternando brazos)" },
+      { "name": "Curl de Bíceps (Pesa Rusa)", "sets": "4", "reps": "10 (agarre de cuernos)" },
+      { "name": "Halo con Pesa Rusa", "sets": "3", "reps": "12 vueltas (core y hombros)" }
+    ]
+  },
+  {
+    "day": "Miércoles",
+    "focus": "Piernas (Poder Inferior)",
+    "exercises": [
+      { "name": "Sentadilla Búlgara (Chaleco + pie atrás en silla)", "sets": "4", "reps": "10 por pierna" },
+      { "name": "Kettlebell Swings", "sets": "4", "reps": "20 (explosión de cadera)" },
+      { "name": "Zancadas laterales", "sets": "3", "reps": "12 (movilidad lateral)" },
+      { "name": "Elevación de talones (con Chaleco)", "sets": "4", "reps": "20 (pantorrillas)" }
+    ]
+  },
+  {
+    "day": "Jueves",
+    "focus": "Enfoque Estético (Hombros y Core)",
+    "exercises": [
+      { "name": "Press de Hombros Sentado (Pesa Rusa)", "sets": "4", "reps": "12" },
+      { "name": "Vuelos Laterales", "sets": "3", "reps": "15 (usa chaleco en mano si pesa mucho)" },
+      { "name": "Paseo del Granjero", "sets": "4", "reps": "vueltas al patio (con chaleco + pesa)" },
+      { "name": "Plancha lateral", "sets": "3", "reps": "45 segundos por lado" }
+    ]
+  },
+  {
+    "day": "Viernes",
+    "focus": "Circuito Híbrido (Para definir - 4 Rondas, 2 min descanso entre rondas)",
+    "exercises": [
+      { "name": "Burpees", "sets": "1", "reps": "12 reps" },
+      { "name": "Goblet Squat (Pesa Rusa al pecho)", "sets": "1", "reps": "15 reps" },
+      { "name": "Flexiones (con Chaleco)", "sets": "1", "reps": "12 reps" },
+      { "name": "Kettlebell Swings", "sets": "1", "reps": "20 reps" },
+      { "name": "Mountain Climbers", "sets": "1", "reps": "30 segundos a tope" }
+    ]
+  }
+]

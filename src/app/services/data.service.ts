@@ -15,4 +15,8 @@ export class DataService {
   getEntrenamiento(): Observable<any[]> {
     return this.http.get<any[]>('/data/entrenamiento.json');
   }
+
+  getEstudio(): Observable<any[]> {
+    return this.http.get<any[]>('/data/estudio.json');
+  }
 }

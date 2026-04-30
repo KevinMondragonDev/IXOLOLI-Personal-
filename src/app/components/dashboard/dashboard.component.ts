@@ -76,6 +76,37 @@ import { ChecklistComponent } from '../checklist/checklist.component';
               </div>
             </div>
           </section>
+
+          <!-- Study Section -->
+          <section class="space-y-6 bg-gray-900/50 rounded-2xl p-6 border border-gray-800 backdrop-blur-sm lg:col-span-2">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-3 bg-purple-500/10 rounded-lg">
+                <svg class="w-6 h-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-2xl font-semibold text-white">Estudio del Día</h2>
+                <p class="text-gray-400 text-sm">Temario para hoy: {{ todayDateText }}</p>
+              </div>
+            </div>
+
+            <div *ngIf="estudioItems.length > 0; else noStudy" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div *ngFor="let route of estudioItems">
+                <h3 class="text-lg font-medium text-gray-300 mb-4 border-b border-gray-800 pb-2">
+                  {{ route.route }}
+                </h3>
+                <app-checklist [category]="'study_' + route.routeId" [items]="[{id: route.id, label: route.label, subLabel: route.phase}]"></app-checklist>
+              </div>
+            </div>
+            
+            <ng-template #noStudy>
+              <div class="p-8 text-center bg-gray-800/30 rounded-xl border border-gray-800 border-dashed">
+                <p class="text-gray-400">No hay tareas de estudio programadas para el día de hoy.</p>
+              </div>
+            </ng-template>
+          </section>
+
         </div>
       </div>
     </div>
@@ -85,14 +116,18 @@ export class DashboardComponent implements OnInit {
   todayRoutine: any;
   dietMenu: any[] = [];
   trainingItems: any[] = [];
+  estudioItems: { route: string, routeId: string, phase: string, id: string, label: string }[] = [];
   
   currentDate = new Date();
   todayName = '';
+  todayDateText = '';
 
   private days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
   constructor(private dataService: DataService) {
     this.todayName = this.days[this.currentDate.getDay()];
+    // Generates format like "30 de abril"
+    this.todayDateText = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long' }).format(this.currentDate);
   }
 
   ngOnInit() {
@@ -109,6 +144,23 @@ export class DashboardComponent implements OnInit {
 
     this.dataService.getDieta().subscribe(data => {
       this.dietMenu = data.menu;
+    });
+
+    this.dataService.getEstudio().subscribe(data => {
+      this.estudioItems = [];
+      data.forEach((r: any, rIdx: number) => {
+        // Encontrar la tarea que coincide con la fecha de hoy
+        const todayTask = r.tasks.find((t: any) => t.date.toLowerCase() === this.todayDateText.toLowerCase());
+        if (todayTask) {
+          this.estudioItems.push({
+            route: r.route,
+            routeId: `route_${rIdx}`,
+            phase: todayTask.phase,
+            id: `study_task_${this.todayDateText.replace(/ /g, '')}`,
+            label: todayTask.title
+          });
+        }
+      });
     });
   }
 

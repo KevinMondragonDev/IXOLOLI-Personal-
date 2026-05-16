@@ -1,90 +1,377 @@
 [
   {
-    "route": "Microservicios con Spring Boot",
+    "route": "Data Engineering",
     "tasks": [
-      { "date": "30 de abril", "phase": "Fase 1: Fundamentos y Primeros Servicios", "title": "1. Introducción a los Microservicios y Arquitectura" },
-      { "date": "1 de mayo", "phase": "Fase 1: Fundamentos y Primeros Servicios", "title": "2. Configuración Inicial y Spring Boot Fundamentals" },
-      { "date": "2 de mayo", "phase": "Fase 1: Fundamentos y Primeros Servicios", "title": "3. Creación del primer Microservicio (RESTful API)" },
-      { "date": "3 de mayo", "phase": "Fase 1: Fundamentos y Primeros Servicios", "title": "4. Conexión a Base de Datos (Spring Data JPA e Hibernate)" },
-      { "date": "4 de mayo", "phase": "Fase 1: Fundamentos y Primeros Servicios", "title": "5. Microservicio de Usuarios y Relaciones de Datos" },
-      { "date": "5 de mayo", "phase": "Fase 2: Comunicación y Enrutamiento", "title": "6. Comunicación Síncrona: RestTemplate y Feign Client" },
-      { "date": "6 de mayo", "phase": "Fase 2: Comunicación y Enrutamiento", "title": "7. Balanceo de Carga del lado del cliente (Spring Cloud LoadBalancer)" },
-      { "date": "7 de mayo", "phase": "Fase 2: Comunicación y Enrutamiento", "title": "8. Naming Server: Implementación de Eureka (Service Registry y Discovery)" },
-      { "date": "8 de mayo", "phase": "Fase 2: Comunicación y Enrutamiento", "title": "9. Enrutamiento central: Spring Cloud Gateway (API Gateway)" },
-      { "date": "9 de mayo", "phase": "Fase 3: Resiliencia, Configuración y Trazabilidad", "title": "10. Resiliencia y Tolerancia a fallos: Resilience4j (Circuit Breaker)" },
-      { "date": "10 de mayo", "phase": "Fase 3: Resiliencia, Configuración y Trazabilidad", "title": "11. Centralización de la Configuración: Spring Cloud Config Server" },
-      { "date": "11 de mayo", "phase": "Fase 3: Resiliencia, Configuración y Trazabilidad", "title": "12. Trazabilidad Distribuida: Micrometer y Zipkin (Rastreo de peticiones)" },
-      { "date": "12 de mayo", "phase": "Fase 3: Resiliencia, Configuración y Trazabilidad", "title": "13. Manejo de Excepciones Globales y Respuestas Estandarizadas" },
-      { "date": "13 de mayo", "phase": "Fase 4: Seguridad, Eventos y Contenedores", "title": "14. Seguridad: Spring Security, OAuth2 y JSON Web Tokens (JWT)" },
-      { "date": "14 de mayo", "phase": "Fase 4: Seguridad, Eventos y Contenedores", "title": "15. Comunicación Asíncrona: Message Brokers (RabbitMQ / Apache Kafka)" },
-      { "date": "15 de mayo", "phase": "Fase 4: Seguridad, Eventos y Contenedores", "title": "16. Contenedores: Dockerizando la Arquitectura Completa" },
-      { "date": "16 de mayo", "phase": "Fase 4: Seguridad, Eventos y Contenedores", "title": "17. Orquestación Local (Docker Compose) y Pruebas de Integración" }
-    ]
-  },
-  {
-    "route": "De Redes a Cloud Architect",
-    "tasks": [
-      { "date": "30 de abril", "phase": "Fase 1: Networking Basics", "title": "1. Communication in a Connected World" },
-      { "date": "1 de mayo", "phase": "Fase 1: Networking Basics", "title": "2. Network Components, Types, and Connections" },
-      { "date": "2 de mayo", "phase": "Fase 1: Networking Basics", "title": "3. Wireless and Mobile Networks" },
-      { "date": "3 de mayo", "phase": "Fase 1: Networking Basics", "title": "4. Build a Home Network" },
-      { "date": "4 de mayo", "phase": "Fase 1: Networking Basics", "title": "5. Communication Principles" },
-      { "date": "5 de mayo", "phase": "Fase 1: Networking Basics", "title": "6. Network Media" },
-      { "date": "6 de mayo", "phase": "Fase 1: Networking Basics", "title": "7. The Access Layer" },
-      { "date": "7 de mayo", "phase": "Fase 1: Networking Basics", "title": "8. The Internet Protocol" },
-      { "date": "8 de mayo", "phase": "Fase 1: Networking Basics", "title": "9. IPv4 and Network Segmentation" },
-      { "date": "9 de mayo", "phase": "Fase 1: Networking Basics", "title": "10. IPv6 Addressing Formats and Rules" },
-      { "date": "10 de mayo", "phase": "Fase 1: Networking Basics", "title": "11. Dynamic Addressing with DHCP" },
-      { "date": "11 de mayo", "phase": "Fase 1: Networking Basics", "title": "12. Gateways to Other Networks" },
-      { "date": "12 de mayo", "phase": "Fase 1: Networking Basics", "title": "13. The ARP Process" },
-      { "date": "13 de mayo", "phase": "Fase 1: Networking Basics", "title": "14. Routing Between Networks" },
-      { "date": "14 de mayo", "phase": "Fase 1: Networking Basics", "title": "15. TCP and UDP" },
-      { "date": "15 de mayo", "phase": "Fase 1: Networking Basics", "title": "16. Application Layer Services" },
-      { "date": "16 de mayo", "phase": "Fase 1: Networking Basics", "title": "17. Network Testing Utilities" },
-      
-      { "date": "17 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "1. Network Design" },
-      { "date": "18 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "2. Cloud and Virtualization" },
-      { "date": "19 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "3. Number Systems" },
-      { "date": "20 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "4. Ethernet Switching" },
-      { "date": "21 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "5. Network Layer" },
-      { "date": "22 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "6. IPv4 Address Structure" },
-      { "date": "23 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "7. Address Resolution (ARP)" },
-      { "date": "24 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "8. IP Addressing Services (DHCP, DNS)" },
-      { "date": "25 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "9. Transport Layer" },
-      { "date": "26 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "10. The Cisco IOS Command Line" },
-      { "date": "27 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "11. Build a Small Cisco Network" },
-      { "date": "28 de mayo", "phase": "Fase 2: Networking Devices and Initial Configuration", "title": "12. ICMP" },
-      
-      { "date": "29 de mayo", "phase": "Fase 3: Network Addressing and Basic Troubleshooting", "title": "1. Physical Layer" },
-      { "date": "30 de mayo", "phase": "Fase 3: Network Addressing and Basic Troubleshooting", "title": "2. Data Link Layer" },
-      { "date": "31 de mayo", "phase": "Fase 3: Network Addressing and Basic Troubleshooting", "title": "3. Routing at the Network Layer" },
-      { "date": "1 de junio", "phase": "Fase 3: Network Addressing and Basic Troubleshooting", "title": "4. IPv6 Addressing" },
-      { "date": "2 de junio", "phase": "Fase 3: Network Addressing and Basic Troubleshooting", "title": "5. IPv6 Neighbor Discovery" },
-      { "date": "3 de junio", "phase": "Fase 3: Network Addressing and Basic Troubleshooting", "title": "6. Cisco Switches and Routers" },
-      { "date": "4 de junio", "phase": "Fase 3: Network Addressing and Basic Troubleshooting", "title": "7. Troubleshoot Common Network Problems" },
-      
-      { "date": "5 de junio", "phase": "Fase 4: Network Support and Security", "title": "1. Network Support" },
-      { "date": "6 de junio", "phase": "Fase 4: Network Support and Security", "title": "2. Cybersecurity Threats, Vulnerabilities, and Attacks" },
-      { "date": "7 de junio", "phase": "Fase 4: Network Support and Security", "title": "3. Network Security" },
-      
-      { "date": "8 de junio", "phase": "Fase 5: Examen y Certificación", "title": "1. Network Technician Career Path Exam" },
-      
-      { "date": "9 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "1. Introduction to Cloud Computing & AWS" },
-      { "date": "10 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "2. IAM (Identity and Access Management)" },
-      { "date": "11 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "3. EC2 (Elastic Compute Cloud) Fundamentals" },
-      { "date": "12 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "4. EC2 Instance Storage" },
-      { "date": "13 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "5. High Availability & Scalability" },
-      { "date": "14 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "6. Route 53 (DNS en AWS)" },
-      { "date": "15 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "7. Amazon S3 (Simple Storage Service)" },
-      { "date": "16 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "8. Databases in AWS" },
-      { "date": "17 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "9. VPC & Networking" },
-      { "date": "18 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "10. Integration & Messaging" },
-      { "date": "19 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "11. Serverless Computing" },
-      { "date": "20 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "12. Containers on AWS" },
-      { "date": "21 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "13. Security & Encryption" },
-      { "date": "22 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "14. Monitoring, Audit & Performance" },
-      { "date": "23 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "15. Data Analytics & Machine Learning" },
-      { "date": "24 de junio", "phase": "Fase 6: Cloud Architecture (AWS)", "title": "16. Disaster Recovery & Migrations" }
+      {
+        "date": "Viernes, 15 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 1: SQL de cero: Tu guía práctica con PostgreSQL (2.0h)"
+      },
+      {
+        "date": "Sábado, 16 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 2: SQL de cero: Tu guía práctica con PostgreSQL (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 17 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 3: SQL de cero: Tu guía práctica con PostgreSQL (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 18 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 4: SQL de cero: Tu guía práctica con PostgreSQL (2.0h)"
+      },
+      {
+        "date": "Martes, 19 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 5: SQL de cero: Tu guía práctica con PostgreSQL (2.0h)"
+      },
+      {
+        "date": "Miércoles, 20 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 6: SQL de cero: Tu guía práctica con PostgreSQL (2.0h)"
+      },
+      {
+        "date": "Jueves, 21 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 7: Análisis de Datos con Pandas y Python (1.5h) / Data Warehouse Fundamentals for Beginners (0.5h)"
+      },
+      {
+        "date": "Viernes, 22 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 8: Data Warehouse Fundamentals for Beginners (2.0h)"
+      },
+      {
+        "date": "Sábado, 23 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 9: Data Warehouse Fundamentals for Beginners (2.5h) / Python para Data Science & ML en 18 Días (Parte 1) (1.5h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 24 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 10: Python para Data Science & ML en 18 Días (Parte 1) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 25 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 11: Python para Data Science & ML en 18 Días (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Martes, 26 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 12: Python para Data Science & ML en 18 Días (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Miércoles, 27 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 13: Python para Data Science & ML en 18 Días (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Jueves, 28 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 14: Python para Data Science & ML en 18 Días (Parte 1) (1.5h) / Python para Data Science & ML (Parte 2) (0.5h)"
+      },
+      {
+        "date": "Viernes, 29 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 15: Python para Data Science & ML (Parte 2) (2.0h)"
+      },
+      {
+        "date": "Sábado, 30 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 16: Python para Data Science & ML (Parte 2) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 31 de mayo",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 17: Python para Data Science & ML (Parte 2) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 1 de junio",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 18: Python para Data Science & ML (Parte 2) (2.0h)"
+      },
+      {
+        "date": "Martes, 2 de junio",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 19: Taming Big Data with Apache Spark 4 and Python (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Miércoles, 3 de junio",
+        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
+        "title": "Día 20: Taming Big Data with Apache Spark 4 and Python (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Jueves, 4 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 21: Taming Big Data with Apache Spark 4 and Python (Parte 1) (1.5h) / Taming Big Data with Apache Spark 4 (Parte 2) (0.5h)"
+      },
+      {
+        "date": "Viernes, 5 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 22: Taming Big Data with Apache Spark 4 (Parte 2) (2.0h)"
+      },
+      {
+        "date": "Sábado, 6 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 23: Taming Big Data with Apache Spark 4 (Parte 2) (1.0h) / AWS Certified Solutions Architect Associate (Parte 1) (3.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 7 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 24: AWS Certified Solutions Architect Associate (Parte 1) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 8 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 25: AWS Certified Solutions Architect Associate (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Martes, 9 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 26: AWS Certified Solutions Architect Associate (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Miércoles, 10 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 27: AWS Certified Solutions Architect Associate (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Jueves, 11 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 28: AWS Certified Solutions Architect Associate (Parte 1) (1.5h) / AWS Certified Solutions Architect Associate (Parte 2) (0.5h)"
+      },
+      {
+        "date": "Viernes, 12 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 29: AWS Certified Solutions Architect Associate (Parte 2) (2.0h)"
+      },
+      {
+        "date": "Sábado, 13 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 30: AWS Certified Solutions Architect Associate (Parte 2) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 14 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 31: AWS Certified Solutions Architect Associate (Parte 2) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 15 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 32: AWS Certified Solutions Architect Associate (Parte 2) (2.0h)"
+      },
+      {
+        "date": "Martes, 16 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 33: AWS Certified Solutions Architect Associate (Parte 2) (2.0h)"
+      },
+      {
+        "date": "Miércoles, 17 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 34: AWS Certified Solutions Architect Associate (Parte 2) (2.0h)"
+      },
+      {
+        "date": "Jueves, 18 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 35: AWS Certified Solutions Architect Associate (Parte 2) (1.5h) / AWS Certified Solutions Architect Associate (Final) (0.5h)"
+      },
+      {
+        "date": "Viernes, 19 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 36: AWS Certified Solutions Architect Associate (Final) (0.5h) / AWS Certified Data Engineer Associate 2026 (Parte 1) (1.5h)"
+      },
+      {
+        "date": "Sábado, 20 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 37: AWS Certified Data Engineer Associate 2026 (Parte 1) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 21 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 38: AWS Certified Data Engineer Associate 2026 (Parte 1) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 22 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 39: AWS Certified Data Engineer Associate 2026 (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Martes, 23 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 40: AWS Certified Data Engineer Associate 2026 (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Miércoles, 24 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 41: AWS Certified Data Engineer Associate 2026 (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Jueves, 25 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 42: AWS Certified Data Engineer Associate 2026 (Parte 1) (1.5h) / AWS Certified Data Engineer Associate 2026 (Final) (0.5h)"
+      },
+      {
+        "date": "Viernes, 26 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 43: AWS Certified Data Engineer Associate 2026 (Final) (2.0h)"
+      },
+      {
+        "date": "Sábado, 27 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 44: AWS Certified Data Engineer Associate 2026 (Final) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 28 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 45: AWS Certified Data Engineer Associate 2026 (Final) (1.0h) / Data Engineering using AWS Data Analytics (Parte 1) (3.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 29 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 46: Data Engineering using AWS Data Analytics (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Martes, 30 de junio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 47: Data Engineering using AWS Data Analytics (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Miércoles, 1 de julio",
+        "phase": "Fase 2: Ecosistema Cloud y Big Data",
+        "title": "Día 48: Data Engineering using AWS Data Analytics (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Jueves, 2 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 49: Data Engineering using AWS Data Analytics (Parte 1) (1.5h) / Data Engineering using AWS Data Analytics (Final) (0.5h)"
+      },
+      {
+        "date": "Viernes, 3 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 50: Data Engineering using AWS Data Analytics (Final) (2.0h)"
+      },
+      {
+        "date": "Sábado, 4 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 51: Data Engineering using AWS Data Analytics (Final) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 5 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 52: Data Engineering using AWS Data Analytics (Final) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 6 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 53: Data Engineering using AWS Data Analytics (Final) (2.0h)"
+      },
+      {
+        "date": "Martes, 7 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 54: Data Engineering using AWS Data Analytics (Final) (2.0h)"
+      },
+      {
+        "date": "Miércoles, 8 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 55: The Complete dbt Bootcamp (Parte 1) (2.0h)"
+      },
+      {
+        "date": "Jueves, 9 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 56: The Complete dbt Bootcamp (Parte 1) (1.5h) / The Complete dbt Bootcamp (Final) (0.5h)"
+      },
+      {
+        "date": "Viernes, 10 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 57: The Complete dbt Bootcamp (Final) (2.0h)"
+      },
+      {
+        "date": "Sábado, 11 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 58: The Complete dbt Bootcamp (Final) (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 12 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 59: The Complete dbt Bootcamp (Final) (1.0h) / Apache Airflow: The Hands-On Guide (3.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 13 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 60: Apache Airflow: The Hands-On Guide (2.0h)"
+      },
+      {
+        "date": "Martes, 14 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 61: Apache Airflow: The Hands-On Guide (2.0h)"
+      },
+      {
+        "date": "Miércoles, 15 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 62: Apache Airflow: The Hands-On Guide (2.0h)"
+      },
+      {
+        "date": "Jueves, 16 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 63: Apache Airflow: The Hands-On Guide (1.5h) / Terraform: De principiante a certificado 2026 (0.5h)"
+      },
+      {
+        "date": "Viernes, 17 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 64: Terraform: De principiante a certificado 2026 (2.0h)"
+      },
+      {
+        "date": "Sábado, 18 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 65: Terraform: De principiante a certificado 2026 (4.0h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Domingo, 19 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 66: Terraform: De principiante a certificado 2026 (2.5h) / Cierre Final: Desplegar infraestructura (IaC) (1.5h)",
+        "isHandsOn": true
+      },
+      {
+        "date": "Lunes, 20 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 67: Cierre Final: Desplegar infraestructura (IaC) (2.0h)"
+      },
+      {
+        "date": "Martes, 21 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 68: Cierre Final: Desplegar infraestructura (IaC) (2.0h)"
+      },
+      {
+        "date": "Miércoles, 22 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 69: Cierre Final: Desplegar infraestructura (IaC) (2.0h)"
+      },
+      {
+        "date": "Jueves, 23 de julio",
+        "phase": "Fase 3: Modern Data Stack y Orquestación",
+        "title": "Día 70: Cierre Final: Desplegar infraestructura (IaC) (1.5h)"
+      }
     ]
   }
 ]

@@ -1,53 +1,57 @@
 [
   {
     "day": "Lunes",
-    "focus": "Empuje (Pecho y Tríceps)",
+    "focus": "Día 1: Empuje (Pecho, Hombros, Tríceps)",
     "exercises": [
-      { "name": "Flexiones con Chaleco", "sets": "4", "reps": "fallo técnico (baja lento, sube explosivo)" },
-      { "name": "Press Militar (Pesa Rusa)", "sets": "4", "reps": "10 por brazo" },
-      { "name": "Flexiones Diamante", "sets": "3", "reps": "12 (tríceps)" },
-      { "name": "Fondos en banco o silla", "sets": "3", "reps": "15 (pecho bajo)" }
+      { "name": "Press de Banca con Barra (Constructor principal de pecho y fuerza)", "sets": 4, "reps": "6-8" },
+      { "name": "Press Inclinado con Mancuernas (Parte alta del pecho)", "sets": 3, "reps": "8-10" },
+      { "name": "Press Militar con Mancuernas (Hombros anchos)", "sets": 4, "reps": "8-10" },
+      { "name": "Elevaciones Laterales con Mancuernas (Hombro lateral en V)", "sets": 4, "reps": "12-15" },
+      { "name": "Extensión de Tríceps en Polea (Usar cuerda para mayor contracción)", "sets": 3, "reps": "10-12" }
     ]
   },
   {
     "day": "Martes",
-    "focus": "Tracción (Espalda y Bíceps)",
+    "focus": "Día 2: Tracción (Espalda y Bíceps)",
     "exercises": [
-      { "name": "Remo a una mano (Pesa Rusa)", "sets": "4", "reps": "12 por lado" },
-      { "name": "Remo 'Gorila'", "sets": "4", "reps": "16 totales (alternando brazos)" },
-      { "name": "Curl de Bíceps (Pesa Rusa)", "sets": "4", "reps": "10 (agarre de cuernos)" },
-      { "name": "Halo con Pesa Rusa", "sets": "3", "reps": "12 vueltas (core y hombros)" }
+      { "name": "Jalón al Pecho en Polea Alta (Espalda ancha)", "sets": 4, "reps": "8-10" },
+      { "name": "Remo con Barra o en máquina (Grosor y densidad)", "sets": 4, "reps": "8-10" },
+      { "name": "Face Pulls con cuerda en polea (Postura y hombro trasero)", "sets": 3, "reps": "12-15" },
+      { "name": "Curl de Bíceps con Barra Z (Volumen del bíceps)", "sets": 3, "reps": "10" },
+      { "name": "Curl Martillo con Mancuernas (Brazo grueso visto de frente)", "sets": 3, "reps": "10-12" }
     ]
   },
   {
     "day": "Miércoles",
-    "focus": "Piernas (Poder Inferior)",
+    "focus": "Día 3: Piernas (Fuerza Inferior)",
     "exercises": [
-      { "name": "Sentadilla Búlgara (Chaleco + pie atrás en silla)", "sets": "4", "reps": "10 por pierna" },
-      { "name": "Kettlebell Swings", "sets": "4", "reps": "20 (explosión de cadera)" },
-      { "name": "Zancadas laterales", "sets": "3", "reps": "12 (movilidad lateral)" },
-      { "name": "Elevación de talones (con Chaleco)", "sets": "4", "reps": "20 (pantorrillas)" }
+      { "name": "Sentadilla Libre con Barra (El rey para crecer piernas y testosterona)", "sets": 4, "reps": "6-8" },
+      { "name": "Prensa de Piernas / Leg Press (Volumen en cuádriceps)", "sets": 3, "reps": "10-12" },
+      { "name": "Peso Muerto Rumano con Mancuernas (Isquiotibiales)", "sets": 4, "reps": "10" },
+      { "name": "Extensión de Cuádriceps en Máquina (Bombeo final)", "sets": 3, "reps": "12-15" },
+      { "name": "Elevación de Pantorrillas en Máquina (Pausa un segundo arriba)", "sets": 4, "reps": "15-20" }
     ]
   },
   {
     "day": "Jueves",
-    "focus": "Enfoque Estético (Hombros y Core)",
+    "focus": "Día 4: Torso (Pecho, Espalda, Brazos)",
     "exercises": [
-      { "name": "Press de Hombros Sentado (Pesa Rusa)", "sets": "4", "reps": "12" },
-      { "name": "Vuelos Laterales", "sets": "3", "reps": "15 (usa chaleco en mano si pesa mucho)" },
-      { "name": "Paseo del Granjero", "sets": "4", "reps": "vueltas al patio (con chaleco + pesa)" },
-      { "name": "Plancha lateral", "sets": "3", "reps": "45 segundos por lado" }
+      { "name": "Dominadas o Máquina Asistida (Espalda ancha)", "sets": 3, "reps": "Al fallo" },
+      { "name": "Press de Pecho en Máquina (Enfoque total en contraer)", "sets": 3, "reps": "10-12" },
+      { "name": "Remo con Mancuerna a una mano (Trabajar desequilibrios)", "sets": 3, "reps": "10 por lado" },
+      { "name": "Elevaciones Laterales en Polea (Tensión constante en hombro)", "sets": 3, "reps": "12-15" },
+      { "name": "Superserie: Curl Polea + Tríceps Copa (Brazos gigantes, uno tras otro)", "sets": 3, "reps": "12 de cada uno" }
     ]
   },
   {
     "day": "Viernes",
-    "focus": "Circuito Híbrido (Para definir - 4 Rondas, 2 min descanso entre rondas)",
+    "focus": "Día 5: Piernas y Core (Para quitar la panza)",
     "exercises": [
-      { "name": "Burpees", "sets": "1", "reps": "12 reps" },
-      { "name": "Goblet Squat (Pesa Rusa al pecho)", "sets": "1", "reps": "15 reps" },
-      { "name": "Flexiones (con Chaleco)", "sets": "1", "reps": "12 reps" },
-      { "name": "Kettlebell Swings", "sets": "1", "reps": "20 reps" },
-      { "name": "Mountain Climbers", "sets": "1", "reps": "30 segundos a tope" }
+      { "name": "Peso Muerto Convencional (Constructor de fuerza brutal)", "sets": 4, "reps": "5-8" },
+      { "name": "Sentadilla Hack o Zancadas (Remate para piernas)", "sets": 3, "reps": "10-12" },
+      { "name": "Curl de Isquios acostado en Máquina (Parte trasera de pierna)", "sets": 3, "reps": "12" },
+      { "name": "Elevación de Piernas Colgado (Abdomen bajo duro)", "sets": 3, "reps": "12-15" },
+      { "name": "Crunch Abdominal en Polea (Bloques abdominales gruesos)", "sets": 3, "reps": "12-15" }
     ]
   }
 ]

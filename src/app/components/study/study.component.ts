@@ -13,7 +13,7 @@ import { ProgressService } from '../../services/progress.service';
     <div class="min-h-screen bg-gray-950 text-gray-100 font-sans p-4 md:p-8">
       <div class="max-w-4xl mx-auto space-y-8">
         <!-- Header -->
-        <header class="flex justify-between items-center border-b border-gray-800 pb-6">
+        <header class="flex flex-col md:flex-row md:justify-between md:items-center border-b border-gray-800 pb-6 gap-4">
           <div>
             <h1 class="text-3xl font-bold text-white flex items-center gap-3">
               <svg class="w-8 h-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -23,10 +23,16 @@ import { ProgressService } from '../../services/progress.service';
             </h1>
             <p class="text-gray-400 mt-2">Completa un módulo para desbloquear el siguiente. Avanza a tu propio ritmo.</p>
           </div>
-          <a routerLink="/" class="px-4 py-2 bg-gray-900 border border-gray-800 hover:bg-gray-800 rounded-lg text-sm transition-colors text-gray-300 flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-            Volver
-          </a>
+          <div class="flex items-center gap-4">
+            <div *ngIf="fireStreak > 0" class="flex items-center gap-2 bg-gradient-to-r from-orange-900/40 to-red-900/40 border border-orange-500/30 px-4 py-2 rounded-xl text-orange-400 font-semibold shadow-[0_0_15px_rgba(249,115,22,0.15)] animate-pulse">
+              <span class="text-xl">🔥</span>
+              <span>Racha: {{ fireStreak }} Días</span>
+            </div>
+            <a routerLink="/" class="px-4 py-2 bg-gray-900 border border-gray-800 hover:bg-gray-800 rounded-lg text-sm transition-colors text-gray-300 flex items-center gap-2 h-fit shrink-0">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+              Volver
+            </a>
+          </div>
         </header>
 
         <div class="grid grid-cols-1 gap-8">
@@ -48,6 +54,7 @@ import { ProgressService } from '../../services/progress.service';
 export class StudyComponent implements OnInit {
   parsedRoutes: any[] = [];
   private rawData: any[] = [];
+  fireStreak: number = 0;
 
   constructor(private dataService: DataService, private progressService: ProgressService) {}
 
@@ -59,6 +66,8 @@ export class StudyComponent implements OnInit {
   }
 
   recalculateDisabled() {
+    let currentStreak = 0;
+    
     this.parsedRoutes = this.rawData.map((routeData, rIdx) => {
       const category = `study_route_${rIdx}`;
       const phasesMap = new Map<string, any[]>();
@@ -69,11 +78,16 @@ export class StudyComponent implements OnInit {
         const taskId = `study_task_${rIdx}_${tIdx}`;
         const isCompleted = this.progressService.getProgress(category, taskId);
         
+        if (isCompleted) {
+          currentStreak++;
+        }
+        
         const item = {
           id: taskId,
           label: task.title,
           subLabel: task.date,
-          disabled: !previousTaskCompleted
+          disabled: !previousTaskCompleted,
+          isHandsOn: task.isHandsOn || false
         };
         
         if (!phasesMap.has(task.phase)) {
@@ -96,5 +110,7 @@ export class StudyComponent implements OnInit {
         phases: phasesArray
       };
     });
+    
+    this.fireStreak = currentStreak;
   }
 }

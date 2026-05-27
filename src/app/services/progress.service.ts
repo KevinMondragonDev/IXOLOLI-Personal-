@@ -37,6 +37,30 @@ export class ProgressService {
     return data ? JSON.parse(data) : {};
   }
 
+  isTrainingCompletedForDate(date: Date, expectedCount: number): boolean {
+    const key = `ixololi_${date.getFullYear()}_${date.getMonth()}_${date.getDate()}`;
+    const data = this.getData(key);
+    if (!data['training']) return false;
+    let completedCount = 0;
+    for (let i = 0; i < expectedCount; i++) {
+      if (data['training'][`ex_${i}`]) completedCount++;
+    }
+    return completedCount === expectedCount;
+  }
+
+  isTrainingDebtCompletedToday(dayName: string, expectedCount: number): boolean {
+    const key = this.getTodayKey();
+    const data = this.getData(key);
+    const cat = `training_${dayName}`;
+    if (!data[cat]) return false;
+    let completedCount = 0;
+    for (let i = 0; i < expectedCount; i++) {
+      if (data[cat][`ex_${i}`]) completedCount++;
+    }
+    return completedCount === expectedCount;
+  }
+
+
   getDeathStreak(): number {
     const data = localStorage.getItem('ixololi_death_streak_count');
     return data ? parseInt(data, 10) : 0;

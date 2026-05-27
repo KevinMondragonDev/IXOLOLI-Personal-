@@ -40,6 +40,10 @@ import { ProgressService } from '../../services/progress.service';
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
             Rutas Globales
           </a>
+          <a routerLink="/nutrition" class="whitespace-nowrap px-5 py-2.5 bg-gray-900 border border-gray-800 hover:border-green-500/50 rounded-lg text-sm font-medium transition-colors text-gray-400 hover:text-green-400 flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" /></svg>
+            Nutrición
+          </a>
         </nav>
 
         <div class="grid grid-cols-1 gap-8">
@@ -71,10 +75,23 @@ import { ProgressService } from '../../services/progress.service';
               </div>
             </ng-container>
             <ng-template #restDay>
-              <div class="relative z-10 p-8 text-center bg-gray-800/30 rounded-xl border border-gray-800 border-dashed">
+              <div class="relative z-10 p-8 text-center bg-gray-800/30 rounded-xl border border-gray-800 border-dashed" *ngIf="deudasEntrenamiento.length === 0">
                 <p class="text-gray-400">Hoy es día de descanso activo o recuperación.</p>
               </div>
             </ng-template>
+
+            <!-- Deudas de Entrenamiento -->
+            <div *ngIf="deudasEntrenamiento.length > 0" class="mt-6 relative z-10 border-t border-gray-800 pt-6">
+              <h3 class="text-xl font-semibold text-orange-400 mb-4 flex items-center gap-2">
+                <span>⚠️</span> Deudas de Entrenamiento
+              </h3>
+              <div class="space-y-6">
+                <div *ngFor="let deuda of deudasEntrenamiento" class="bg-gray-800/40 p-4 rounded-xl border border-orange-500/20">
+                  <h4 class="text-lg font-medium text-gray-300 mb-3">{{ deuda.day }} - {{ deuda.focus }}</h4>
+                  <app-checklist [category]="deuda.category" [items]="deuda.items" (itemToggled)="onTrainingToggled()"></app-checklist>
+                </div>
+              </div>
+            </div>
           </section>
 
           <!-- Study Section -->
@@ -101,10 +118,25 @@ import { ProgressService } from '../../services/progress.service';
             </div>
             
             <ng-template #noStudy>
-              <div class="p-8 text-center bg-gray-800/30 rounded-xl border border-gray-800 border-dashed">
+              <div class="p-8 text-center bg-gray-800/30 rounded-xl border border-gray-800 border-dashed" *ngIf="deudasEstudioGrouped.length === 0">
                 <p class="text-gray-400">No hay tareas de estudio programadas para el día de hoy.</p>
               </div>
             </ng-template>
+
+            <!-- Deudas de Estudio -->
+            <div *ngIf="deudasEstudioGrouped.length > 0" class="mt-6 relative z-10 border-t border-gray-800 pt-6">
+              <h3 class="text-xl font-semibold text-orange-400 mb-4 flex items-center gap-2">
+                <span>⚠️</span> Deudas de Estudio
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div *ngFor="let group of deudasEstudioGrouped">
+                  <h3 class="text-lg font-medium text-gray-300 mb-4 border-b border-gray-800 pb-2">
+                    {{ group.route }}
+                  </h3>
+                  <app-checklist [category]="'study_' + group.routeId" [items]="group.items"></app-checklist>
+                </div>
+              </div>
+            </div>
           </section>
 
           <!-- Serenity Section -->
@@ -155,6 +187,9 @@ export class DashboardComponent implements OnInit {
   trainingItems: any[] = [];
   estudioItems: { route: string, routeId: string, phase: string, id: string, label: string }[] = [];
   
+  deudasEntrenamiento: { day: string, focus: string, category: string, items: any[] }[] = [];
+  deudasEstudioGrouped: { route: string, routeId: string, items: any[] }[] = [];
+  
   deathStreak: number = 0;
   showDeathAnimation = false;
 
@@ -195,14 +230,47 @@ export class DashboardComponent implements OnInit {
           subLabel: `${ex.sets} series x ${ex.reps}`
         }));
       }
+
+      this.deudasEntrenamiento = [];
+      const currentDayOfWeek = this.currentDate.getDay();
+      const daysToMonday = currentDayOfWeek === 0 ? 6 : currentDayOfWeek - 1;
+      
+      for (let i = 0; i < daysToMonday; i++) {
+        const pastDate = new Date(this.currentDate);
+        pastDate.setDate(this.currentDate.getDate() - (daysToMonday - i));
+        const pastDayName = this.days[pastDate.getDay()];
+        const routine = data.find((d: any) => d.day === pastDayName);
+        
+        if (routine) {
+          const wasCompleted = this.progressService.isTrainingCompletedForDate(pastDate, routine.exercises.length);
+          const completedAsDebt = this.progressService.isTrainingDebtCompletedToday(pastDayName, routine.exercises.length);
+          
+          if (!wasCompleted && !completedAsDebt) {
+            this.deudasEntrenamiento.push({
+              day: pastDayName,
+              focus: routine.focus,
+              category: `training_${pastDayName}`,
+              items: routine.exercises.map((ex: any, idx: number) => ({
+                id: `ex_${idx}`,
+                label: ex.name,
+                subLabel: `${ex.sets} series x ${ex.reps}`
+              }))
+            });
+          }
+        }
+      }
+
       this.checkTrainingStatus();
     });
 
     this.dataService.getEstudio().subscribe(data => {
       this.estudioItems = [];
+      this.deudasEstudioGrouped = [];
+
       data.forEach((r: any, rIdx: number) => {
-        // Encontrar la tarea que coincide con la fecha de hoy usando findIndex
-        const tIdx = r.tasks.findIndex((t: any) => t.date.toLowerCase() === this.todayDateText.toLowerCase());
+        // Encontrar la tarea que coincide con la fecha de hoy usando includes para que encaje con "Sábado, 16 de mayo"
+        const tIdx = r.tasks.findIndex((t: any) => t.date.toLowerCase().includes(this.todayDateText.toLowerCase()));
+        
         if (tIdx !== -1) {
           const todayTask = r.tasks[tIdx];
           this.estudioItems.push({
@@ -212,6 +280,34 @@ export class DashboardComponent implements OnInit {
             id: `study_task_${rIdx}_${tIdx}`,
             label: todayTask.title
           });
+
+          // Buscar tareas de días anteriores en la misma ruta que no estén completadas
+          const pastTasksItems = [];
+          for (let i = 0; i < tIdx; i++) {
+            const pastTask = r.tasks[i];
+            const isCompleted = this.progressService.getProgress(`study_route_${rIdx}`, `study_task_${rIdx}_${i}`);
+            if (!isCompleted) {
+              pastTasksItems.push({
+                id: `study_task_${rIdx}_${i}`,
+                label: pastTask.title,
+                subLabel: `[Deuda - ${pastTask.date}] ${pastTask.phase}`
+              });
+            }
+          }
+
+          if (pastTasksItems.length > 0) {
+            this.deudasEstudioGrouped.push({
+              route: r.route,
+              routeId: `route_${rIdx}`,
+              items: pastTasksItems
+            });
+          }
+        } else {
+          // If today's task is not found, maybe they are ahead/behind, 
+          // let's just find the last date they interacted with or all tasks before today's actual date.
+          // For simplicity, we just look up to today using the actual JS date object logic if possible,
+          // but since they have sequential string dates, it's safer to only show debts when tIdx is found.
+          // Given the structure, they are doing it daily and will always find the current day in the array.
         }
       });
     });

@@ -16,6 +16,20 @@ export class ProgressService {
     return this.getTodayKey();
   }
 
+  saveUnlock(category: string, id: string) {
+    const key = 'ixololi_study_unlocks';
+    const data = this.getData(key);
+    if (!data[category]) data[category] = {};
+    data[category][id] = true;
+    localStorage.setItem(key, JSON.stringify(data));
+  }
+
+  getUnlock(category: string, id: string): boolean {
+    const key = 'ixololi_study_unlocks';
+    const data = this.getData(key);
+    return data[category]?.[id] || false;
+  }
+
   saveProgress(category: string, id: string, completed: boolean) {
     const key = this.getKeyForCategory(category);
     let data = this.getData(key);

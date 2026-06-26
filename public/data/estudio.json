@@ -1,377 +1,163 @@
 [
   {
-    "route": "Data Engineering",
+    "route": "Data Engineer — AWS + Databricks + FAANG",
     "tasks": [
-      {
-        "date": "Viernes, 15 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 1: SQL de cero: Tu guía práctica con PostgreSQL (2.0h)"
-      },
-      {
-        "date": "Sábado, 16 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 2: SQL de cero: Tu guía práctica con PostgreSQL (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 17 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 3: SQL de cero: Tu guía práctica con PostgreSQL (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 18 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 4: SQL de cero: Tu guía práctica con PostgreSQL (2.0h)"
-      },
-      {
-        "date": "Martes, 19 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 5: SQL de cero: Tu guía práctica con PostgreSQL (2.0h)"
-      },
-      {
-        "date": "Miércoles, 20 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 6: SQL de cero: Tu guía práctica con PostgreSQL (2.0h)"
-      },
-      {
-        "date": "Jueves, 21 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 7: Análisis de Datos con Pandas y Python (1.5h) / Data Warehouse Fundamentals for Beginners (0.5h)"
-      },
-      {
-        "date": "Viernes, 22 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 8: Data Warehouse Fundamentals for Beginners (2.0h)"
-      },
-      {
-        "date": "Sábado, 23 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 9: Data Warehouse Fundamentals for Beginners (2.5h) / Python para Data Science & ML en 18 Días (Parte 1) (1.5h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 24 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 10: Python para Data Science & ML en 18 Días (Parte 1) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 25 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 11: Python para Data Science & ML en 18 Días (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Martes, 26 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 12: Python para Data Science & ML en 18 Días (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Miércoles, 27 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 13: Python para Data Science & ML en 18 Días (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Jueves, 28 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 14: Python para Data Science & ML en 18 Días (Parte 1) (1.5h) / Python para Data Science & ML (Parte 2) (0.5h)"
-      },
-      {
-        "date": "Viernes, 29 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 15: Python para Data Science & ML (Parte 2) (2.0h)"
-      },
-      {
-        "date": "Sábado, 30 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 16: Python para Data Science & ML (Parte 2) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 31 de mayo",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 17: Python para Data Science & ML (Parte 2) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 1 de junio",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 18: Python para Data Science & ML (Parte 2) (2.0h)"
-      },
-      {
-        "date": "Martes, 2 de junio",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 19: Taming Big Data with Apache Spark 4 and Python (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Miércoles, 3 de junio",
-        "phase": "Fase 1: Fundamentos y Manipulación de Datos",
-        "title": "Día 20: Taming Big Data with Apache Spark 4 and Python (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Jueves, 4 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 21: Taming Big Data with Apache Spark 4 and Python (Parte 1) (1.5h) / Taming Big Data with Apache Spark 4 (Parte 2) (0.5h)"
-      },
-      {
-        "date": "Viernes, 5 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 22: Taming Big Data with Apache Spark 4 (Parte 2) (2.0h)"
-      },
-      {
-        "date": "Sábado, 6 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 23: Taming Big Data with Apache Spark 4 (Parte 2) (1.0h) / AWS Certified Solutions Architect Associate (Parte 1) (3.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 7 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 24: AWS Certified Solutions Architect Associate (Parte 1) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 8 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 25: AWS Certified Solutions Architect Associate (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Martes, 9 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 26: AWS Certified Solutions Architect Associate (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Miércoles, 10 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 27: AWS Certified Solutions Architect Associate (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Jueves, 11 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 28: AWS Certified Solutions Architect Associate (Parte 1) (1.5h) / AWS Certified Solutions Architect Associate (Parte 2) (0.5h)"
-      },
-      {
-        "date": "Viernes, 12 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 29: AWS Certified Solutions Architect Associate (Parte 2) (2.0h)"
-      },
-      {
-        "date": "Sábado, 13 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 30: AWS Certified Solutions Architect Associate (Parte 2) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 14 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 31: AWS Certified Solutions Architect Associate (Parte 2) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 15 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 32: AWS Certified Solutions Architect Associate (Parte 2) (2.0h)"
-      },
-      {
-        "date": "Martes, 16 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 33: AWS Certified Solutions Architect Associate (Parte 2) (2.0h)"
-      },
-      {
-        "date": "Miércoles, 17 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 34: AWS Certified Solutions Architect Associate (Parte 2) (2.0h)"
-      },
-      {
-        "date": "Jueves, 18 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 35: AWS Certified Solutions Architect Associate (Parte 2) (1.5h) / AWS Certified Solutions Architect Associate (Final) (0.5h)"
-      },
-      {
-        "date": "Viernes, 19 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 36: AWS Certified Solutions Architect Associate (Final) (0.5h) / AWS Certified Data Engineer Associate 2026 (Parte 1) (1.5h)"
-      },
-      {
-        "date": "Sábado, 20 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 37: AWS Certified Data Engineer Associate 2026 (Parte 1) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 21 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 38: AWS Certified Data Engineer Associate 2026 (Parte 1) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 22 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 39: AWS Certified Data Engineer Associate 2026 (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Martes, 23 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 40: AWS Certified Data Engineer Associate 2026 (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Miércoles, 24 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 41: AWS Certified Data Engineer Associate 2026 (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Jueves, 25 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 42: AWS Certified Data Engineer Associate 2026 (Parte 1) (1.5h) / AWS Certified Data Engineer Associate 2026 (Final) (0.5h)"
-      },
-      {
-        "date": "Viernes, 26 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 43: AWS Certified Data Engineer Associate 2026 (Final) (2.0h)"
-      },
-      {
-        "date": "Sábado, 27 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 44: AWS Certified Data Engineer Associate 2026 (Final) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 28 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 45: AWS Certified Data Engineer Associate 2026 (Final) (1.0h) / Data Engineering using AWS Data Analytics (Parte 1) (3.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 29 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 46: Data Engineering using AWS Data Analytics (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Martes, 30 de junio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 47: Data Engineering using AWS Data Analytics (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Miércoles, 1 de julio",
-        "phase": "Fase 2: Ecosistema Cloud y Big Data",
-        "title": "Día 48: Data Engineering using AWS Data Analytics (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Jueves, 2 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 49: Data Engineering using AWS Data Analytics (Parte 1) (1.5h) / Data Engineering using AWS Data Analytics (Final) (0.5h)"
-      },
-      {
-        "date": "Viernes, 3 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 50: Data Engineering using AWS Data Analytics (Final) (2.0h)"
-      },
-      {
-        "date": "Sábado, 4 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 51: Data Engineering using AWS Data Analytics (Final) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 5 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 52: Data Engineering using AWS Data Analytics (Final) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 6 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 53: Data Engineering using AWS Data Analytics (Final) (2.0h)"
-      },
-      {
-        "date": "Martes, 7 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 54: Data Engineering using AWS Data Analytics (Final) (2.0h)"
-      },
-      {
-        "date": "Miércoles, 8 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 55: The Complete dbt Bootcamp (Parte 1) (2.0h)"
-      },
-      {
-        "date": "Jueves, 9 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 56: The Complete dbt Bootcamp (Parte 1) (1.5h) / The Complete dbt Bootcamp (Final) (0.5h)"
-      },
-      {
-        "date": "Viernes, 10 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 57: The Complete dbt Bootcamp (Final) (2.0h)"
-      },
-      {
-        "date": "Sábado, 11 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 58: The Complete dbt Bootcamp (Final) (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 12 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 59: The Complete dbt Bootcamp (Final) (1.0h) / Apache Airflow: The Hands-On Guide (3.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 13 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 60: Apache Airflow: The Hands-On Guide (2.0h)"
-      },
-      {
-        "date": "Martes, 14 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 61: Apache Airflow: The Hands-On Guide (2.0h)"
-      },
-      {
-        "date": "Miércoles, 15 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 62: Apache Airflow: The Hands-On Guide (2.0h)"
-      },
-      {
-        "date": "Jueves, 16 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 63: Apache Airflow: The Hands-On Guide (1.5h) / Terraform: De principiante a certificado 2026 (0.5h)"
-      },
-      {
-        "date": "Viernes, 17 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 64: Terraform: De principiante a certificado 2026 (2.0h)"
-      },
-      {
-        "date": "Sábado, 18 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 65: Terraform: De principiante a certificado 2026 (4.0h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Domingo, 19 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 66: Terraform: De principiante a certificado 2026 (2.5h) / Cierre Final: Desplegar infraestructura (IaC) (1.5h)",
-        "isHandsOn": true
-      },
-      {
-        "date": "Lunes, 20 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 67: Cierre Final: Desplegar infraestructura (IaC) (2.0h)"
-      },
-      {
-        "date": "Martes, 21 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 68: Cierre Final: Desplegar infraestructura (IaC) (2.0h)"
-      },
-      {
-        "date": "Miércoles, 22 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 69: Cierre Final: Desplegar infraestructura (IaC) (2.0h)"
-      },
-      {
-        "date": "Jueves, 23 de julio",
-        "phase": "Fase 3: Modern Data Stack y Orquestación",
-        "title": "Día 70: Cierre Final: Desplegar infraestructura (IaC) (1.5h)"
-      }
+      { "date": "Jueves, 25 de junio de 2026", "phase": "Q1 · Semana 1 — Setup y Python Básico", "title": "Día 1: Setup entorno — Python 3.12, VS Code, extensiones, venv. Variables, tipos, operadores, print/input (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 26 de junio de 2026", "phase": "Q1 · Semana 1 — Setup y Python Básico", "title": "Día 2: Control de flujo — if/elif/else, for, while, break, continue. Ejercicios: FizzBuzz, factorial, Fibonacci (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 27 de junio de 2026", "phase": "Q1 · Semana 1 — Setup y Python Básico", "title": "Día 3: Estructuras de datos — listas, tuplas, sets, dicts, comprensiones. 20 ejercicios Exercism (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 28 de junio de 2026", "phase": "Q1 · Semana 1 — Setup y Python Básico", "title": "Día 4: Funciones — parámetros, *args/**kwargs, lambda, scope, docstrings. Mini-proyecto: calculadora CLI (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Lunes, 29 de junio de 2026", "phase": "Q1 · Semana 1 — Setup y Python Básico", "title": "Día 5: Excepciones — try/except/finally, raise, excepciones custom. Añadir manejo de errores a calculadora (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 30 de junio de 2026", "phase": "Q1 · Semana 1 — Setup y Python Básico", "title": "Día 6: Módulos y paquetes — import, pip, venv, estructura de proyecto. 🃏 Crear mazo Anki Python (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 1 de julio de 2026", "phase": "Q1 · Semana 1 — Setup y Python Básico", "title": "Día 7: Archivos — lectura/escritura CSV, JSON, TXT con pathlib. Crear cuenta GitHub + primer commit (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+
+      { "date": "Jueves, 2 de julio de 2026", "phase": "Q1 · Semana 2 — POO y Python Intermedio", "title": "Día 8: POO básico — clases, atributos, métodos, __init__, self, encapsulamiento (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 3 de julio de 2026", "phase": "Q1 · Semana 2 — POO y Python Intermedio", "title": "Día 9: Herencia y polimorfismo — métodos mágicos __str__, __repr__, __eq__. Modelar 3 clases (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 4 de julio de 2026", "phase": "Q1 · Semana 2 — POO y Python Intermedio", "title": "Día 10: Decoradores — @property, @staticmethod, @classmethod. Refactorizar calculadora a POO (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 5 de julio de 2026", "phase": "Q1 · Semana 2 — POO y Python Intermedio", "title": "Día 11: Iteradores, generadores, context managers, async/await intro. 10 ejercicios HackerRank (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Lunes, 6 de julio de 2026", "phase": "Q1 · Semana 2 — POO y Python Intermedio", "title": "Día 12: requests — APIs REST, parámetros, headers, status codes, rate limiting (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 7 de julio de 2026", "phase": "Q1 · Semana 2 — POO y Python Intermedio", "title": "Día 13: datetime, os, logging, typing hints. Intro Pandas y NumPy (Series, DataFrame, vectorización) (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 8 de julio de 2026", "phase": "Q1 · Semana 2 — POO y Python Intermedio", "title": "Día 14: 🔥 Proyecto 1 — Web scraper de noticias (BeautifulSoup + requests → CSV + GitHub README) (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+
+      { "date": "Jueves, 9 de julio de 2026", "phase": "Q1 · Semana 3 — Linux, Git y Bash", "title": "Día 15: Linux fundamentos — filesystem, cd/ls/pwd, chmod/chown, cp/mv/rm. Linux Journey Grasshopper (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 10 de julio de 2026", "phase": "Q1 · Semana 3 — Linux, Git y Bash", "title": "Día 16: Linux avanzado — grep, find, sed, awk, pipes, redirects, tar. Script backup carpeta (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 11 de julio de 2026", "phase": "Q1 · Semana 3 — Linux, Git y Bash", "title": "Día 17: Git fundamentos — init, add, commit, log, diff, branches, merge, resolver conflictos (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 12 de julio de 2026", "phase": "Q1 · Semana 3 — Linux, Git y Bash", "title": "Día 18: GitHub — remotes, push/pull/fetch, PRs, issues, .gitignore, SSH keys. Repo con 5 branches (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Lunes, 13 de julio de 2026", "phase": "Q1 · Semana 3 — Linux, Git y Bash", "title": "Día 19: 🔥 Proyecto 2 — CLI gestor de tareas (argparse + JSON persistente + tests con pytest) (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 14 de julio de 2026", "phase": "Q1 · Semana 3 — Linux, Git y Bash", "title": "Día 20: Pandas profundo — merge, groupby, pivot, agg, fillna, apply. NumPy vectorización (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 15 de julio de 2026", "phase": "Q1 · Semana 3 — Linux, Git y Bash", "title": "Día 21: Polars intro — DataFrame/LazyFrame, expresiones, benchmark vs Pandas en dataset 1GB (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+
+      { "date": "Jueves, 16 de julio de 2026", "phase": "Q1 · Semana 4 — EDA y Checkpoint Q1", "title": "Día 22: Visualización — Matplotlib + Seaborn: distribuciones, correlaciones, outliers (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 17 de julio de 2026", "phase": "Q1 · Semana 4 — EDA y Checkpoint Q1", "title": "Día 23: 🔥 Proyecto 3 — EDA Kaggle (NYC TLC o Titanic) en Pandas Y Polars + benchmark de velocidad (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 18 de julio de 2026", "phase": "Q1 · Semana 4 — EDA y Checkpoint Q1", "title": "Día 24: Estadística descriptiva para DE — medias, percentiles, distribuciones, A/B testing conceptual (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 19 de julio de 2026", "phase": "Q1 · Semana 4 — EDA y Checkpoint Q1", "title": "Día 25: Repaso Q1 — refinar 3 proyectos GitHub, READMEs en inglés, Anki review 50+ cards (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Lunes, 20 de julio de 2026", "phase": "Q1 · Semana 4 — EDA y Checkpoint Q1", "title": "Día 26: ✅ Checkpoint Q1 — 100+ ejercicios Python completados, 3 proyectos en GitHub, streak activo (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+
+      { "date": "Martes, 21 de julio de 2026", "phase": "Q2 · Semana 5 — SQL Fundamentos", "title": "Día 27: Setup PostgreSQL + DBeaver. SELECT, FROM, WHERE, ORDER BY, LIMIT, alias. 15 queries SQLZoo (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 22 de julio de 2026", "phase": "Q2 · Semana 5 — SQL Fundamentos", "title": "Día 28: Funciones de agregación — COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING, DISTINCT (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 23 de julio de 2026", "phase": "Q2 · Semana 5 — SQL Fundamentos", "title": "Día 29: JOINs — INNER, LEFT, RIGHT, FULL, CROSS, SELF. 15 ejercicios con JOINs complejos (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 24 de julio de 2026", "phase": "Q2 · Semana 5 — SQL Fundamentos", "title": "Día 30: Subqueries en SELECT/WHERE/FROM, correlacionadas. CTEs con WITH. 10 LeetCode SQL Easy (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 25 de julio de 2026", "phase": "Q2 · Semana 5 — SQL Fundamentos", "title": "Día 31: INSERT, UPDATE, DELETE, UPSERT/MERGE. Transacciones ACID, BEGIN/COMMIT/ROLLBACK (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 26 de julio de 2026", "phase": "Q2 · Semana 5 — SQL Fundamentos", "title": "Día 32: 20 ejercicios LeetCode SQL Easy + 5 Medium. Práctica con dataset Pagila (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 27 de julio de 2026", "phase": "Q2 · Semana 6 — SQL Avanzado", "title": "Día 33: Window functions — ROW_NUMBER, RANK, DENSE_RANK, NTILE, PARTITION BY, ORDER BY (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 28 de julio de 2026", "phase": "Q2 · Semana 6 — SQL Avanzado", "title": "Día 34: LAG, LEAD, FIRST_VALUE, LAST_VALUE. Running totals, moving averages. 10 StrataScratch (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 29 de julio de 2026", "phase": "Q2 · Semana 6 — SQL Avanzado", "title": "Día 35: EXPLAIN / EXPLAIN ANALYZE. Índices B-tree, parciales, cuándo NO indexar. Optimizar 5 queries (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 30 de julio de 2026", "phase": "Q2 · Semana 6 — SQL Avanzado", "title": "Día 36: Stored procedures, triggers, views materializadas, niveles de aislamiento (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 31 de julio de 2026", "phase": "Q2 · Semana 6 — SQL Avanzado", "title": "Día 37: Análisis de cohortes en SQL. 10 LeetCode SQL Medium (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 1 de agosto de 2026", "phase": "Q2 · Semana 6 — SQL Avanzado", "title": "Día 38: Modelado relacional — ERD, normalización 1FN-3FN, llaves primarias/foráneas, integridad referencial (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 2 de agosto de 2026", "phase": "Q2 · Semana 6 — SQL Avanzado", "title": "Día 39: Kimball star schema, snowflake, hechos, dimensiones. Leer caps 1-3 Data Warehouse Toolkit (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 3 de agosto de 2026", "phase": "Q2 · Semana 7 — Modelado + Proyectos SQL", "title": "Día 40: SCD tipo 0, 1, 2, 3, 6. Fact tables: transaction, periodic snapshot, accumulating snapshot (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 4 de agosto de 2026", "phase": "Q2 · Semana 7 — Modelado + Proyectos SQL", "title": "Día 41: NoSQL — MongoDB CRUD con Python, Redis key-value, DynamoDB intro. CAP theorem, BASE vs ACID (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 5 de agosto de 2026", "phase": "Q2 · Semana 7 — Modelado + Proyectos SQL", "title": "Día 42: 🔥 Proyecto 4 — DWH dimensional e-commerce (PostgreSQL): DDL + datos con Faker + star schema (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 6 de agosto de 2026", "phase": "Q2 · Semana 7 — Modelado + Proyectos SQL", "title": "Día 43: Proyecto 4 cont. — vistas materializadas para gold layer + Metabase/Superset dashboard (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 7 de agosto de 2026", "phase": "Q2 · Semana 7 — Modelado + Proyectos SQL", "title": "Día 44: Proyecto 5 — migración OLTP→OLAP: tomar esquema normalizado y convertir a star schema (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 8 de agosto de 2026", "phase": "Q2 · Semana 7 — Modelado + Proyectos SQL", "title": "Día 45: ✅ Checkpoint Q2 + post LinkedIn explicando Kimball. 80+ ejercicios SQL completados (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Domingo, 9 de agosto de 2026", "phase": "Q3 · Semana 8 — AWS Cloud Practitioner", "title": "Día 46: Cloud computing — IaaS/PaaS/SaaS, CAPEX vs OPEX. AWS global infra: regiones, AZs, edge locations (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Lunes, 10 de agosto de 2026", "phase": "Q3 · Semana 8 — AWS Cloud Practitioner", "title": "Día 47: Crear cuenta AWS + MFA + billing alerts $5/$20. IAM: users, groups, roles, policies (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 11 de agosto de 2026", "phase": "Q3 · Semana 8 — AWS Cloud Practitioner", "title": "Día 48: EC2 (tipos, AMIs, key pairs, SGs), S3 (buckets, storage classes). Lanzar EC2 + SSH (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 12 de agosto de 2026", "phase": "Q3 · Semana 8 — AWS Cloud Practitioner", "title": "Día 49: RDS, DynamoDB, Aurora, ElastiCache. Crear RDS PostgreSQL + conectar desde local (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 13 de agosto de 2026", "phase": "Q3 · Semana 8 — AWS Cloud Practitioner", "title": "Día 50: VPC, subnets públicas/privadas, route tables, IGW, NAT, Security Groups vs NACLs (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 14 de agosto de 2026", "phase": "Q3 · Semana 8 — AWS Cloud Practitioner", "title": "Día 51: Lambda, CloudWatch logs/metrics/alarms, CloudTrail. Lambda Python procesando S3 (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 15 de agosto de 2026", "phase": "Q3 · Semana 8 — AWS Cloud Practitioner", "title": "Día 52: AWS CLI + boto3 SDK — profiles, paginators, script lista S3 buckets con tamaño (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 16 de agosto de 2026", "phase": "Q3 · Semana 8 — AWS Cloud Practitioner", "title": "Día 53: Well-Architected Framework 6 pilares. Shared responsibility model. ETL vs ELT, Data Lake vs DWH vs Lakehouse (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 17 de agosto de 2026", "phase": "Q3 · Semana 9 — Proyectos AWS + Repaso CLF-C02", "title": "Día 54: Proyecto 6 — App serverless: S3 + Lambda + DynamoDB + API Gateway (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 18 de agosto de 2026", "phase": "Q3 · Semana 9 — Proyectos AWS + Repaso CLF-C02", "title": "Día 55: Proyecto 7 — Backup automatizado boto3: S3 + lifecycle policies a Glacier (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 19 de agosto de 2026", "phase": "Q3 · Semana 9 — Proyectos AWS + Repaso CLF-C02", "title": "Día 56: Repaso CLF-C02 — TutorialsDojo Practice Tests 1 y 2. Analizar errores (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 20 de agosto de 2026", "phase": "Q3 · Semana 9 — Proyectos AWS + Repaso CLF-C02", "title": "Día 57: Repaso CLF-C02 — TutorialsDojo Practice Tests 3 y 4. Cheat sheet de servicios (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 21 de agosto de 2026", "phase": "Q3 · Semana 9 — Proyectos AWS + Repaso CLF-C02", "title": "Día 58: Repaso CLF-C02 — Practice Tests 5 y 6. Áreas débiles + whitepaper AWS Pricing (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 22 de agosto de 2026", "phase": "Q3 · Semana 9 — Proyectos AWS + Repaso CLF-C02", "title": "Día 59: 🎓 EXAMEN: AWS Cloud Practitioner CLF-C02 (~$100 USD) + publicar logro LinkedIn (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Domingo, 23 de agosto de 2026", "phase": "Q4 · Semana 10 — Apache Spark + PySpark", "title": "Día 60: Arquitectura Spark — driver, executors, cluster manager, DAG, lazy evaluation (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Lunes, 24 de agosto de 2026", "phase": "Q4 · Semana 10 — Apache Spark + PySpark", "title": "Día 61: RDDs vs DataFrames vs Datasets. Transformaciones (select, filter, withColumn, join) vs acciones (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 25 de agosto de 2026", "phase": "Q4 · Semana 10 — Apache Spark + PySpark", "title": "Día 62: Spark SQL, temp views, UDFs. groupBy, agg, window functions en Spark (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 26 de agosto de 2026", "phase": "Q4 · Semana 10 — Apache Spark + PySpark", "title": "Día 63: Particionamiento, shuffle, broadcast joins, AQE. Catalyst optimizer, Tungsten (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 27 de agosto de 2026", "phase": "Q4 · Semana 10 — Apache Spark + PySpark", "title": "Día 64: Formatos — Parquet, ORC, Avro vs CSV/JSON. Compresión Snappy/GZIP/ZSTD, columnar pruning (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 28 de agosto de 2026", "phase": "Q4 · Semana 10 — Apache Spark + PySpark", "title": "Día 65: DuckDB — motor OLAP embebido, SQL sobre Parquet en S3, comparativa vs Athena (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 29 de agosto de 2026", "phase": "Q4 · Semana 10 — Apache Spark + PySpark", "title": "Día 66: Polars profundo — lazy vs eager, expresiones, joins, GroupBy. Benchmark 5GB vs Spark (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 30 de agosto de 2026", "phase": "Q4 · Semana 10 — Apache Spark + PySpark", "title": "Día 67: 10 ejercicios PySpark (transformaciones, joins complejos, window functions) (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 31 de agosto de 2026", "phase": "Q4 · Semana 11 — Apache Airflow", "title": "Día 68: Conceptos Airflow — DAGs, tasks, operators, scheduler, executor. Instalar con Docker Compose (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 1 de septiembre de 2026", "phase": "Q4 · Semana 11 — Apache Airflow", "title": "Día 69: Operators — BashOperator, PythonOperator, PostgresOperator. Primer DAG con dependencias (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 2 de septiembre de 2026", "phase": "Q4 · Semana 11 — Apache Airflow", "title": "Día 70: XComs, TaskFlow API, Sensors (file, S3, time), branching, trigger rules (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 3 de septiembre de 2026", "phase": "Q4 · Semana 11 — Apache Airflow", "title": "Día 71: Best practices — idempotencia, atomicidad, retries, backfill, Variables, Connections, Pools (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 4 de septiembre de 2026", "phase": "Q4 · Semana 11 — Apache Airflow", "title": "Día 72: Docker avanzado — Dockerfile multistage, volumes, networks, docker-compose multi-container (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 5 de septiembre de 2026", "phase": "Q4 · Semana 11 — Apache Airflow", "title": "Día 73: 🔥 Proyecto 8 (parte 1) — Pipeline ETL batch: diseño + Docker Compose Airflow/Spark/Postgres (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 6 de septiembre de 2026", "phase": "Q4 · Semana 11 — Apache Airflow", "title": "Día 74: 🔥 Proyecto 8 (parte 2) — Transformaciones PySpark bronze→silver→gold + carga Postgres (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Lunes, 7 de septiembre de 2026", "phase": "Q4 · Semana 11 — Apache Airflow", "title": "Día 75: 🔥 Proyecto 8 (cierre) — DAG Airflow orquestando todo + tests pytest + README + benchmark Pandas/Polars/Spark (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+
+      { "date": "Martes, 8 de septiembre de 2026", "phase": "Q5 · Semana 12 — AWS Data Engineer: S3 + Glue + Iceberg", "title": "Día 76: S3 avanzado — lifecycle, versioning, replication, encryption SSE-S3/KMS, particionamiento Hive-style (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 9 de septiembre de 2026", "phase": "Q5 · Semana 12 — AWS Data Engineer: S3 + Glue + Iceberg", "title": "Día 77: AWS Glue — crawlers, Data Catalog, jobs PySpark, bookmarks, triggers, Glue Studio visual ETL (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 10 de septiembre de 2026", "phase": "Q5 · Semana 12 — AWS Data Engineer: S3 + Glue + Iceberg", "title": "Día 78: Athena — queries serverless S3, particionamiento, CTAS, workgroups. Pipeline Glue→Athena→S3 (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 11 de septiembre de 2026", "phase": "Q5 · Semana 12 — AWS Data Engineer: S3 + Glue + Iceberg", "title": "Día 79: Apache Iceberg en AWS — Glue+Athena nativo, time travel, schema evolution, partition evolution (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 12 de septiembre de 2026", "phase": "Q5 · Semana 12 — AWS Data Engineer: S3 + Glue + Iceberg", "title": "Día 80: Delta vs Iceberg vs Hudi — comparativa trade-offs (tema frecuente entrevistas FAANG). Lake Formation governance (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 13 de septiembre de 2026", "phase": "Q5 · Semana 12 — AWS Data Engineer: S3 + Glue + Iceberg", "title": "Día 81: Airbyte open source — conectores, syncs incrementales, dbt+Airbyte juntos. Alternativa a extractores custom (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 14 de septiembre de 2026", "phase": "Q5 · Semana 13 — AWS Data Engineer: Redshift + Snowflake + Cert", "title": "Día 82: Redshift MPP — leader/compute nodes, distribution styles, sort keys, COPY, Spectrum (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 15 de septiembre de 2026", "phase": "Q5 · Semana 13 — AWS Data Engineer: Redshift + Snowflake + Cert", "title": "Día 83: EMR Serverless — jobs Spark/Hadoop. DMS full load + CDC. Step Functions state machines (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 16 de septiembre de 2026", "phase": "Q5 · Semana 13 — AWS Data Engineer: Redshift + Snowflake + Cert", "title": "Día 84: Kinesis Data Streams + Firehose. MWAA (Airflow gestionado). Snowflake intro: arquitectura virtual warehouses (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 17 de septiembre de 2026", "phase": "Q5 · Semana 13 — AWS Data Engineer: Redshift + Snowflake + Cert", "title": "Día 85: Snowflake — Snowpipe ingesta, Streams+Tasks CDC, Snowpark Python. Proyecto 9 parte 1: Data Lake Iceberg+Airbyte (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 18 de septiembre de 2026", "phase": "Q5 · Semana 13 — AWS Data Engineer: Redshift + Snowflake + Cert", "title": "Día 86: Proyecto 9 (cierre) — silver/gold + Athena + QuickSight + Step Functions. Repaso DEA-C01 TutorialsDojo 1-3 (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 19 de septiembre de 2026", "phase": "Q5 · Semana 13 — AWS Data Engineer: Redshift + Snowflake + Cert", "title": "Día 87: Repaso DEA-C01 — TutorialsDojo 4-6. Whitepapers: Data Analytics Lens, Modern Data Architecture (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 20 de septiembre de 2026", "phase": "Q5 · Semana 13 — AWS Data Engineer: Redshift + Snowflake + Cert", "title": "Día 88: 🎓 EXAMEN: AWS Data Engineer Associate DEA-C01 (~$150 USD) + LinkedIn + CV actualizado (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 21 de septiembre de 2026", "phase": "Q6 · Semana 14 — Streaming: Kafka + Flink", "title": "Día 89: Kafka fundamentos — topics, partitions, offsets, brokers. Producer/consumer Python local con Docker (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 22 de septiembre de 2026", "phase": "Q6 · Semana 14 — Streaming: Kafka + Flink", "title": "Día 90: Kafka avanzado — replication, ISR, exactly-once semantics, Schema Registry Avro, Kafka Connect intro (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 23 de septiembre de 2026", "phase": "Q6 · Semana 14 — Streaming: Kafka + Flink", "title": "Día 91: Spark Structured Streaming — output modes, triggers, windows tumbling/sliding, watermarks, stateful (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 24 de septiembre de 2026", "phase": "Q6 · Semana 14 — Streaming: Kafka + Flink", "title": "Día 92: Apache Flink intro — DataStream API, Table API, event time vs processing time, checkpointing (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 25 de septiembre de 2026", "phase": "Q6 · Semana 14 — Streaming: Kafka + Flink", "title": "Día 93: CDC — Debezium + Postgres→Kafka, outbox pattern, event sourcing. Comparativa Flink vs Spark Streaming (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 26 de septiembre de 2026", "phase": "Q6 · Semana 14 — Streaming: Kafka + Flink", "title": "Día 94: dbt Core — project structure, models, sources, refs, seeds, materializations (view/table/incremental/ephemeral) (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 27 de septiembre de 2026", "phase": "Q6 · Semana 14 — Streaming: Kafka + Flink", "title": "Día 95: dbt avanzado — macros, Jinja, dbt_utils, tests (generic + singular), documentation, lineage graph (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 28 de septiembre de 2026", "phase": "Q6 · Semana 15 — Data Quality + Observabilidad + IaC", "title": "Día 96: Soda Core + Great Expectations — expectations, suites, checkpoints. Data Contracts con dbt + Pydantic (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 29 de septiembre de 2026", "phase": "Q6 · Semana 15 — Data Quality + Observabilidad + IaC", "title": "Día 97: OpenLineage + Marquez — data lineage. Observabilidad de datos: freshness, volume, distribution, schema (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 30 de septiembre de 2026", "phase": "Q6 · Semana 15 — Data Quality + Observabilidad + IaC", "title": "Día 98: A/B testing pipelines — assignment tables, experiment metrics, significance. Kubernetes básico: pods, deployments (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 1 de octubre de 2026", "phase": "Q6 · Semana 15 — Data Quality + Observabilidad + IaC", "title": "Día 99: Kubernetes — services, configmaps, secrets, kubectl. Airflow KubernetesExecutor. Helm charts intro (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 2 de octubre de 2026", "phase": "Q6 · Semana 15 — Data Quality + Observabilidad + IaC", "title": "Día 100: Terraform — providers AWS, resources, variables, outputs, state, workspaces, módulos (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 3 de octubre de 2026", "phase": "Q6 · Semana 15 — Data Quality + Observabilidad + IaC", "title": "Día 101: GitHub Actions — CI/CD para Glue jobs, Lambda, dbt. pytest PySpark, black, ruff, sqlfluff, pre-commit (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 4 de octubre de 2026", "phase": "Q6 · Semana 15 — Data Quality + Observabilidad + IaC", "title": "Día 102: 🔥 Proyecto 10 — Pipeline streaming: Kafka + Flink + Iceberg + dbt + Soda + Terraform + CI/CD + benchmark latencias (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Lunes, 5 de octubre de 2026", "phase": "Q6 · Semana 15 — Data Quality + Observabilidad + IaC", "title": "Día 103: ✅ Checkpoint Q6 — pipeline streaming deployado + post blog Medium/Dev.to sobre arquitectura (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+
+      { "date": "Martes, 6 de octubre de 2026", "phase": "Q7 · Semana 16 — Databricks Lakehouse + Delta Lake", "title": "Día 104: Databricks intro — Lakehouse paradigm, control plane vs data plane. Crear cuenta Community Edition (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 7 de octubre de 2026", "phase": "Q7 · Semana 16 — Databricks Lakehouse + Delta Lake", "title": "Día 105: Workspaces, clusters all-purpose vs job, pools, DBR runtimes. Notebooks multi-lenguaje (%python/%sql) (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 8 de octubre de 2026", "phase": "Q7 · Semana 16 — Databricks Lakehouse + Delta Lake", "title": "Día 106: DBFS, mounts S3, Databricks Repos Git. Auto Loader (cloudFiles), schema inference/evolution, COPY INTO (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 9 de octubre de 2026", "phase": "Q7 · Semana 16 — Databricks Lakehouse + Delta Lake", "title": "Día 107: Delta Lake fundamentos — ACID, transaction log, time travel, schema enforcement/evolution. CRUD en Delta (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 10 de octubre de 2026", "phase": "Q7 · Semana 16 — Databricks Lakehouse + Delta Lake", "title": "Día 108: Delta OPTIMIZE, Z-ORDER, VACUUM, liquid clustering, deletion vectors. Benchmark con/sin Z-ORDER (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 11 de octubre de 2026", "phase": "Q7 · Semana 16 — Databricks Lakehouse + Delta Lake", "title": "Día 109: Delta Live Tables — declarative pipelines, expectations, streaming tables, materialized views. DLT pipeline demo (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 12 de octubre de 2026", "phase": "Q7 · Semana 17 — Unity Catalog + Databricks Associate", "title": "Día 110: Unity Catalog — metastore, catalogs, schemas, tables, external locations. GRANT/REVOKE, lineage (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 13 de octubre de 2026", "phase": "Q7 · Semana 17 — Unity Catalog + Databricks Associate", "title": "Día 111: Databricks SQL — warehouses serverless, dashboards, alerts. Workflows: jobs, tasks, schedules, retries (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 14 de octubre de 2026", "phase": "Q7 · Semana 17 — Unity Catalog + Databricks Associate", "title": "Día 112: 🔥 Proyecto 11 (parte 1) — Lakehouse: Auto Loader→DLT bronze/silver/gold + Unity Catalog + Snowflake Snowpipe (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 15 de octubre de 2026", "phase": "Q7 · Semana 17 — Unity Catalog + Databricks Associate", "title": "Día 113: 🔥 Proyecto 11 (cierre) — Databricks SQL dashboard + Workflows + README + diagrama arquitectura (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 16 de octubre de 2026", "phase": "Q7 · Semana 17 — Unity Catalog + Databricks Associate", "title": "Día 114: Repaso Databricks DE Associate — Databricks Academy learning plan + simuladores Derar Alhussein (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 17 de octubre de 2026", "phase": "Q7 · Semana 17 — Unity Catalog + Databricks Associate", "title": "Día 115: Repaso Associate — practice exams + cheat sheet Delta/DLT/UC. Áreas débiles (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 18 de octubre de 2026", "phase": "Q7 · Semana 17 — Unity Catalog + Databricks Associate", "title": "Día 116: 🎓 EXAMEN: Databricks Certified Data Engineer Associate (~$200 USD) + compartir logro (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 19 de octubre de 2026", "phase": "Q8 · Semana 18 — Databricks Avanzado + Data Mesh", "title": "Día 117: Photon engine, file sizing avanzado, Spark UI profiling, query profiling. Optimizar pipeline con benchmarks (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 20 de octubre de 2026", "phase": "Q8 · Semana 18 — Databricks Avanzado + Data Mesh", "title": "Día 118: Streaming avanzado Databricks — Structured Streaming + Delta sinks, stateful, deduplicación late data (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 21 de octubre de 2026", "phase": "Q8 · Semana 18 — Databricks Avanzado + Data Mesh", "title": "Día 119: Databricks Asset Bundles (DAB) — databricks.yml, deploy multi-env dev/staging/prod con GitHub Actions (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 22 de octubre de 2026", "phase": "Q8 · Semana 18 — Databricks Avanzado + Data Mesh", "title": "Día 120: MLflow tracking, models, registry. Feature Store intro. Security: secrets, service principals (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 23 de octubre de 2026", "phase": "Q8 · Semana 18 — Databricks Avanzado + Data Mesh", "title": "Día 121: Data Mesh — dominios, data products, self-serve platform, federated governance. FinOps de datos (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 24 de octubre de 2026", "phase": "Q8 · Semana 18 — Databricks Avanzado + Data Mesh", "title": "Día 122: Comunicación con stakeholders — PRDs, specs técnicas, decir no con alternativas. Repaso Databricks Professional (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 25 de octubre de 2026", "phase": "Q8 · Semana 18 — Databricks Avanzado + Data Mesh", "title": "Día 123: Repaso Databricks Professional — practice exams + streaming avanzado + security + DAB. Áreas débiles (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 26 de octubre de 2026", "phase": "Q8 · Semana 19 — Capstone + Certificación Professional", "title": "Día 124: 🎓 EXAMEN: Databricks Certified Data Engineer Professional (~$200 USD) + publicar logro (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 27 de octubre de 2026", "phase": "Q8 · Semana 19 — Capstone + Certificación Professional", "title": "Día 125: 🔥 Capstone diseño — definir dominio (NYC TLC / GitHub Archive), diagrama arquitectura, Terraform infra setup (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 28 de octubre de 2026", "phase": "Q8 · Semana 19 — Capstone + Certificación Professional", "title": "Día 126: 🔥 Capstone ingesta — Kafka/Kinesis producer + Auto Loader → Delta/Iceberg bronze + Unity Catalog (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 29 de octubre de 2026", "phase": "Q8 · Semana 19 — Capstone + Certificación Professional", "title": "Día 127: 🔥 Capstone silver/gold — DLT pipelines con expectations + dbt gold layer + Soda quality checks (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 30 de octubre de 2026", "phase": "Q8 · Semana 19 — Capstone + Certificación Professional", "title": "Día 128: 🔥 Capstone CI/CD + monitoring — DAB + GitHub Actions + Grafana dashboard + OpenLineage lineage (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 31 de octubre de 2026", "phase": "Q8 · Semana 19 — Capstone + Certificación Professional", "title": "Día 129: 🔥 Capstone documentación — case study: problema, arquitectura, ADRs, benchmarks 100M+ registros (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 1 de noviembre de 2026", "phase": "Q8 · Semana 19 — Capstone + Certificación Professional", "title": "Día 130: 🔥 Capstone polish — README estilo FAANG, diagrama Excalidraw, 'What I'd do differently' (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+
+      { "date": "Lunes, 2 de noviembre de 2026", "phase": "Q8 · Semana 20 — Portfolio + Empleo", "title": "Día 131: CV 1 página ATS — skills, certs, proyectos al top. LinkedIn headline + about storytelling + featured (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Martes, 3 de noviembre de 2026", "phase": "Q8 · Semana 20 — Portfolio + Empleo", "title": "Día 132: GitHub portfolio — pinear 5 mejores repos, README de perfil, contribuciones OSS públicas (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Miércoles, 4 de noviembre de 2026", "phase": "Q8 · Semana 20 — Portfolio + Empleo", "title": "Día 133: Preparación SQL entrevistas — 30 ejercicios Medium/Hard (LeetCode + StrataScratch window functions) (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Jueves, 5 de noviembre de 2026", "phase": "Q8 · Semana 20 — Portfolio + Empleo", "title": "Día 134: PySpark entrevistas — 10 ejercicios transformación/optimización. System Design: 3 casos pipeline data (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Viernes, 6 de noviembre de 2026", "phase": "Q8 · Semana 20 — Portfolio + Empleo", "title": "Día 135: Behavioral prep — 8 historias STAR, mapeo Amazon Leadership Principles, pitch personal 60 segundos (2h)", "isHandsOn": false, "durationHours": 2, "unlockable": true },
+      { "date": "Sábado, 7 de noviembre de 2026", "phase": "Q8 · Semana 20 — Portfolio + Empleo", "title": "Día 136: Mock interview en inglés (Hello Interview / Pramp) — SQL + System Design. 30+ aplicaciones enviadas (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true },
+      { "date": "Domingo, 8 de noviembre de 2026", "phase": "Q8 · Semana 20 — Portfolio + Empleo", "title": "Día 137: Networking activo — 20 DEs FAANG en LinkedIn, meetup AWS User Group Querétaro/CDMX. 🎯 META: OFERTA DE TRABAJO (4h)", "isHandsOn": true, "durationHours": 4, "unlockable": true }
     ]
   }
 ]

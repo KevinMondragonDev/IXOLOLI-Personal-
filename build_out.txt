@@ -1,0 +1,21 @@
+c:\Users\kevin\OneDrive\Escritorio\CoffeFoundation\IXOLOLI-SaludPersonal\node_modules\@angular-devkit\architect\node_modules\rxjs\dist\cjs\internal\util\reportUnhandledError.js:13
+            throw err;
+            ^
+
+Error: UNKNOWN: unknown error, read
+    at Object.readFileSync (node:fs:440:20)
+    at defaultLoadImpl (node:internal/modules/cjs/loader:1148:17)
+    at loadSource (node:internal/modules/cjs/loader:1838:20)
+    at Object..js (node:internal/modules/cjs/loader:1936:44)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1556:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (c:\Users\kevin\OneDrive\Escritorio\CoffeFoundation\IXOLOLI-SaludPersonal\node_modules\@nodelib\fs.scandir\out\settings.js:5:12) {
+  errno: -4094,
+  code: 'UNKNOWN',
+  syscall: 'read'
+}
+
+Node.js v24.14.1

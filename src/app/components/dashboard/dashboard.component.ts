@@ -198,7 +198,7 @@ export class DashboardComponent implements OnInit {
   habitsItems = [
     { id: 'habit_nosmoke', label: 'No fumar' },
     { id: 'habit_nodrink', label: 'No beber alcohol' },
-    { id: 'habit_notouch', label: 'No tocarse' }
+    { id: 'habit_notouch', label: 'blue' }
   ];
 
   activeNotifications: string[] = [];

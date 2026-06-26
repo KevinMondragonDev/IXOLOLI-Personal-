@@ -118,7 +118,16 @@ import { ProgressService } from '../../services/progress.service';
               {{ item.label }}
             </p>
             <p *ngIf="item.subLabel" class="text-sm mt-0.5"
-               [ngClass]="item.disabled ? 'text-gray-700' : 'text-gray-500'">{{ item.subLabel }}</p>
+                [ngClass]="item.disabled ? 'text-gray-700' : 'text-gray-500'">{{ item.subLabel }}</p>
+            @if (item.bullets && item.bullets.length > 0) {
+              <ul class="mt-3 space-y-1.5 text-xs pl-4 list-disc border-l border-gray-800/80">
+                @for (bullet of item.bullets; track $index) {
+                  <li [ngClass]="isChecked(item.id) ? 'text-gray-600 line-through' : (item.disabled ? 'text-gray-700' : 'text-gray-400')">
+                    {{ bullet }}
+                  </li>
+                }
+              </ul>
+            }
             <!-- Hold hint -->
             <p *ngIf="item.disabled && item.unlockable && holdingId !== item.id"
                class="text-xs text-purple-500/60 mt-0.5">
@@ -143,6 +152,7 @@ export class ChecklistComponent {
     disabled?: boolean;
     isHandsOn?: boolean;
     unlockable?: boolean;
+    bullets?: string[];
   }[] = [];
   @Output() itemToggled = new EventEmitter<string>();
   @Output() itemUnlocked = new EventEmitter<string>();

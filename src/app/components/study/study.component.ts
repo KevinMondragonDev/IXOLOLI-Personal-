@@ -357,6 +357,7 @@ export class StudyComponent implements OnInit {
           disabled:    isDisabled,
           isHandsOn:   task.isHandsOn || false,
           unlockable:  task.unlockable !== false,  // default true
+          bullets:     task.bullets || [],
         };
 
         const phaseName = task.phase;

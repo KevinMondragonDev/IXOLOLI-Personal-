@@ -113,7 +113,7 @@ import { ProgressService } from '../../services/progress.service';
                 <h3 class="text-lg font-medium text-gray-300 mb-4 border-b border-gray-800 pb-2">
                   {{ route.route }}
                 </h3>
-                <app-checklist [category]="'study_' + route.routeId" [items]="[{id: route.id, label: route.label, subLabel: route.phase}]"></app-checklist>
+                <app-checklist [category]="'study_' + route.routeId" [items]="[{id: route.id, label: route.label, subLabel: route.phase, bullets: route.bullets}]"></app-checklist>
               </div>
             </div>
             
@@ -185,7 +185,7 @@ import { ProgressService } from '../../services/progress.service';
 export class DashboardComponent implements OnInit {
   todayRoutine: any;
   trainingItems: any[] = [];
-  estudioItems: { route: string, routeId: string, phase: string, id: string, label: string }[] = [];
+  estudioItems: { route: string, routeId: string, phase: string, id: string, label: string, bullets: string[] }[] = [];
   
   deudasEntrenamiento: { day: string, focus: string, category: string, items: any[] }[] = [];
   deudasEstudioGrouped: { route: string, routeId: string, items: any[] }[] = [];
@@ -282,7 +282,8 @@ export class DashboardComponent implements OnInit {
             routeId: `route_${rIdx}`,
             phase: todayTask.phase,
             id: `study_task_${rIdx}_${tIdx}`,
-            label: todayTask.title
+            label: todayTask.title,
+            bullets: todayTask.bullets || []
           });
         }
 
@@ -296,7 +297,8 @@ export class DashboardComponent implements OnInit {
             pastTasksItems.push({
               id: `study_task_${rIdx}_${i}`,
               label: pastTask.title,
-              subLabel: `[Deuda - ${pastTask.date}] ${pastTask.phase}`
+              subLabel: `[Deuda - ${pastTask.date}] ${pastTask.phase}`,
+              bullets: pastTask.bullets || []
             });
           }
         }

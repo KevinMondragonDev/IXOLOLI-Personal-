@@ -31,7 +31,7 @@ import { ProgressService } from '../../services/progress.service';
             <div *ngIf="fireStreak > 0"
                  class="flex items-center gap-2 bg-gradient-to-r from-orange-900/40 to-red-900/40 border border-orange-500/30 px-4 py-2 rounded-xl text-orange-400 font-semibold shadow-[0_0_15px_rgba(249,115,22,0.15)]">
               <span class="text-lg">🔥</span>
-              <span>{{ fireStreak }} días</span>
+              <span>{{ fireStreak }} semanas</span>
             </div>
             <!-- Back -->
             <a routerLink="/"
@@ -50,7 +50,7 @@ import { ProgressService } from '../../services/progress.service';
             <span class="text-sm text-gray-400 font-medium">Progreso total</span>
             <span class="text-sm font-bold"
                   [ngClass]="globalPercent >= 100 ? 'text-emerald-400' : 'text-purple-400'">
-              {{ completedCount }} / {{ totalCount }} días ({{ globalPercent | number:'1.0-0' }}%)
+              {{ completedCount }} / {{ totalCount }} semanas ({{ globalPercent | number:'1.0-0' }}%)
             </span>
           </div>
           <!-- Barra -->
@@ -170,6 +170,104 @@ import { ProgressService } from '../../services/progress.service';
             </div>
           </div>
 
+        </div>
+
+        <!-- Secciones Adicionales del Roadmap -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          
+          <!-- Sistema Anti-olvido -->
+          <div class="bg-gray-900/60 border border-gray-800 hover:border-purple-500/30 transition-colors rounded-2xl p-6 space-y-4">
+            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+              <span>🧠</span> Sistema Anti-olvido
+            </h3>
+            <p class="text-xs text-gray-400">Implementa estas técnicas de forma rutinaria para garantizar retención a largo plazo.</p>
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li class="flex gap-2">
+                <span class="text-purple-400 font-bold">Anki:</span>
+                <span>Crea 5-10 flashcards por tema nuevo. Repásalas 15 min al día en ayunas.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-purple-400 font-bold">Feynman:</span>
+                <span>Explica el tema principal de la semana en voz alta como si se lo enseñaras a un no-técnico.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-purple-400 font-bold">Blogging:</span>
+                <span>Escribe 1 post al mes en LinkedIn o Medium explicando lo aprendido. 24 posts = diferenciador masivo.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-purple-400 font-bold">Rutina:</span>
+                <span>Lee 1 blog de ingeniería de producción (Netflix, Uber, Meta, Airbnb) al día mientras desayunas.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Recursos Recomendados -->
+          <div class="bg-gray-900/60 border border-gray-800 hover:border-emerald-500/30 transition-colors rounded-2xl p-6 space-y-4">
+            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+              <span>📚</span> Recursos Permanentes
+            </h3>
+            <p class="text-xs text-gray-400">Enlaces y lecturas clave recomendadas para tu formación como Data Engineer.</p>
+            
+            <div class="space-y-3 text-xs">
+              <div>
+                <span class="text-gray-400 font-semibold uppercase block mb-1">Libros Imprescindibles:</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-gray-800 border border-gray-700 text-gray-300 rounded-md">Fundamentals of DE (Joe Reis)</span>
+                  <span class="px-2.5 py-1 bg-gray-800 border border-gray-700 text-gray-300 rounded-md">Designing Data-Intensive Apps (Kleppmann)</span>
+                  <span class="px-2.5 py-1 bg-gray-800 border border-gray-700 text-gray-300 rounded-md">The DW Toolkit (Kimball)</span>
+                </div>
+              </div>
+              
+              <div>
+                <span class="text-gray-400 font-semibold uppercase block mb-1">Blogs de Ingeniería recomendados:</span>
+                <div class="flex flex-wrap gap-2">
+                  <a href="https://netflixtechblog.com" target="_blank" class="px-2.5 py-1 bg-purple-950/20 border border-purple-900/40 text-purple-300 hover:bg-purple-900/30 rounded-md transition-colors">Netflix Tech</a>
+                  <a href="https://eng.uber.com" target="_blank" class="px-2.5 py-1 bg-purple-950/20 border border-purple-900/40 text-purple-300 hover:bg-purple-900/30 rounded-md transition-colors">Uber Eng</a>
+                  <a href="https://medium.com/airbnb-engineering" target="_blank" class="px-2.5 py-1 bg-purple-950/20 border border-purple-900/40 text-purple-300 hover:bg-purple-900/30 rounded-md transition-colors">Airbnb Engineering</a>
+                  <a href="https://stripe.com/blog/engineering" target="_blank" class="px-2.5 py-1 bg-purple-950/20 border border-purple-900/40 text-purple-300 hover:bg-purple-900/30 rounded-md transition-colors">Stripe Eng</a>
+                </div>
+              </div>
+
+              <div>
+                <span class="text-gray-400 font-semibold uppercase block mb-1">Newsletters & YouTube:</span>
+                <div class="flex flex-wrap gap-2 font-mono text-[10px]">
+                  <a href="https://www.dataengineeringweekly.com/" target="_blank" class="px-2 py-0.5 bg-emerald-950/20 border border-emerald-900/40 text-emerald-300 hover:bg-emerald-900/30 rounded">DE Weekly</a>
+                  <a href="https://seattledataguy.substack.com/" target="_blank" class="px-2 py-0.5 bg-emerald-950/20 border border-emerald-900/40 text-emerald-300 hover:bg-emerald-900/30 rounded">Seattle Data Guy</a>
+                  <a href="https://blog.bytebytego.com/" target="_blank" class="px-2 py-0.5 bg-emerald-950/20 border border-emerald-900/40 text-emerald-300 hover:bg-emerald-900/30 rounded">ByteByteGo</a>
+                  <a href="https://www.youtube.com/@AdvancingAnalytics" target="_blank" class="px-2 py-0.5 bg-emerald-950/20 border border-emerald-900/40 text-emerald-300 hover:bg-emerald-900/30 rounded">Advancing Analytics</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificaciones Clave -->
+        <div class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6 mt-6 space-y-4">
+          <h3 class="text-xl font-bold text-white flex items-center gap-2">
+            <span>🎓</span> Hitos y Certificaciones Clave del Plan
+          </h3>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+            <div class="p-3 bg-gray-800/40 rounded-xl border border-gray-800">
+              <p class="text-purple-400 font-bold text-sm">Mes 9</p>
+              <p class="text-white text-xs font-semibold mt-1">AWS Cloud Practitioner</p>
+              <span class="text-[10px] text-gray-500">CLF-C02 · $100 USD</span>
+            </div>
+            <div class="p-3 bg-gray-800/40 rounded-xl border border-gray-800">
+              <p class="text-purple-400 font-bold text-sm">Mes 15</p>
+              <p class="text-white text-xs font-semibold mt-1">AWS Data Engineer</p>
+              <span class="text-[10px] text-gray-500">DEA-C01 · $150 USD</span>
+            </div>
+            <div class="p-3 bg-gray-800/40 rounded-xl border border-gray-800">
+              <p class="text-purple-400 font-bold text-sm">Mes 21</p>
+              <p class="text-white text-xs font-semibold mt-1">Databricks Associate</p>
+              <span class="text-[10px] text-gray-500">DE Associate · $200 USD</span>
+            </div>
+            <div class="p-3 bg-gray-800/40 rounded-xl border border-gray-800">
+              <p class="text-purple-400 font-bold text-sm">Mes 23</p>
+              <p class="text-white text-xs font-semibold mt-1">Databricks Professional</p>
+              <span class="text-[10px] text-gray-500">DE Professional · $200 USD</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -303,8 +401,8 @@ export class StudyComponent implements OnInit {
   private calculateTimeReduction(lastCompletedIdx: number, totalTasks: number) {
     if (totalTasks === 0) return;
 
-    // Original end date = PLAN_START + totalTasks days (1 task per calendar day)
-    const origEnd = this.addCalendarDays(this.PLAN_START, totalTasks - 1);
+    // Original end date = PLAN_START + totalTasks weeks
+    const origEnd = this.addCalendarDays(this.PLAN_START, (totalTasks * 7) - 1);
     this.originalEndDate = this.formatDate(origEnd);
 
     if (lastCompletedIdx < 0) {
@@ -315,15 +413,15 @@ export class StudyComponent implements OnInit {
       return;
     }
 
-    // What day in the calendar does the last completed task correspond to?
-    const expectedCalendarDay = this.addCalendarDays(this.PLAN_START, lastCompletedIdx);
+    // What day in the calendar does the last completed week correspond to?
+    const expectedCalendarDay = this.addCalendarDays(this.PLAN_START, (lastCompletedIdx + 1) * 7);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
     // Days ahead = difference between expected calendar day and today
     const msPerDay    = 1000 * 60 * 60 * 24;
     const daysAhead   = Math.floor(
-      (today.getTime() - expectedCalendarDay.getTime()) / msPerDay
+      (expectedCalendarDay.getTime() - today.getTime()) / msPerDay
     );
 
     this.savedDays = Math.max(0, daysAhead);

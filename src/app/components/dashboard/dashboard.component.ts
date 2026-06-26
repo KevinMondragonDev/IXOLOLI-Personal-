@@ -267,11 +267,15 @@ export class DashboardComponent implements OnInit {
       this.estudioItems = [];
       this.deudasEstudioGrouped = [];
 
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const PLAN_START = new Date(2026, 5, 25); // month 5 is June
+      const msPerDay = 1000 * 60 * 60 * 24;
+      const diffDays = Math.floor((today.getTime() - PLAN_START.getTime()) / msPerDay);
+      const tIdx = Math.floor(diffDays / 7);
+
       data.forEach((r: any, rIdx: number) => {
-        // Encontrar la tarea que coincide con la fecha de hoy usando includes para que encaje con "Sábado, 16 de mayo"
-        const tIdx = r.tasks.findIndex((t: any) => t.date.toLowerCase().includes(this.todayDateText.toLowerCase()));
-        
-        if (tIdx !== -1) {
+        if (tIdx >= 0 && tIdx < r.tasks.length) {
           const todayTask = r.tasks[tIdx];
           this.estudioItems.push({
             route: r.route,
@@ -280,34 +284,29 @@ export class DashboardComponent implements OnInit {
             id: `study_task_${rIdx}_${tIdx}`,
             label: todayTask.title
           });
+        }
 
-          // Buscar tareas de días anteriores en la misma ruta que no estén completadas
-          const pastTasksItems = [];
-          for (let i = 0; i < tIdx; i++) {
-            const pastTask = r.tasks[i];
-            const isCompleted = this.progressService.getProgress(`study_route_${rIdx}`, `study_task_${rIdx}_${i}`);
-            if (!isCompleted) {
-              pastTasksItems.push({
-                id: `study_task_${rIdx}_${i}`,
-                label: pastTask.title,
-                subLabel: `[Deuda - ${pastTask.date}] ${pastTask.phase}`
-              });
-            }
-          }
-
-          if (pastTasksItems.length > 0) {
-            this.deudasEstudioGrouped.push({
-              route: r.route,
-              routeId: `route_${rIdx}`,
-              items: pastTasksItems
+        // Buscar tareas de semanas anteriores en la misma ruta que no estén completadas
+        const pastTasksItems = [];
+        const maxPastIdx = Math.min(tIdx, r.tasks.length);
+        for (let i = 0; i < maxPastIdx; i++) {
+          const pastTask = r.tasks[i];
+          const isCompleted = this.progressService.getProgress(`study_route_${rIdx}`, `study_task_${rIdx}_${i}`);
+          if (!isCompleted) {
+            pastTasksItems.push({
+              id: `study_task_${rIdx}_${i}`,
+              label: pastTask.title,
+              subLabel: `[Deuda - ${pastTask.date}] ${pastTask.phase}`
             });
           }
-        } else {
-          // If today's task is not found, maybe they are ahead/behind, 
-          // let's just find the last date they interacted with or all tasks before today's actual date.
-          // For simplicity, we just look up to today using the actual JS date object logic if possible,
-          // but since they have sequential string dates, it's safer to only show debts when tIdx is found.
-          // Given the structure, they are doing it daily and will always find the current day in the array.
+        }
+
+        if (pastTasksItems.length > 0) {
+          this.deudasEstudioGrouped.push({
+            route: r.route,
+            routeId: `route_${rIdx}`,
+            items: pastTasksItems
+          });
         }
       });
     });

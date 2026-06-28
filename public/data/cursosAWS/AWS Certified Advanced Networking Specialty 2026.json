@@ -1,0 +1,152 @@
+{
+    "course": {
+        "name": "[NEW] AWS Certified Advanced Networking Specialty 2026",
+        "provider": "Udemy",
+        "modules": [
+            {
+                "id": 1,
+                "title": "Introduction",
+                "lessons": 3,
+                "duration": "31 min"
+            },
+            {
+                "id": 2,
+                "title": "Code & Slides Download",
+                "lessons": 1,
+                "duration": "1 min"
+            },
+            {
+                "id": 3,
+                "title": "Amazon VPC Fundamentals",
+                "lessons": 19,
+                "duration": "2 h 44 min"
+            },
+            {
+                "id": 4,
+                "title": "Additional VPC Features",
+                "lessons": 6,
+                "duration": "48 min"
+            },
+            {
+                "id": 5,
+                "title": "VPC DNS and DHCP",
+                "lessons": 8,
+                "duration": "1 h 3 min"
+            },
+            {
+                "id": 6,
+                "title": "Network Performance and Optimization",
+                "lessons": 8,
+                "duration": "1 h 8 min"
+            },
+            {
+                "id": 7,
+                "title": "VPC Traffic Monitoring, Troubleshooting & Analysis",
+                "lessons": 7,
+                "duration": "1 h 8 min"
+            },
+            {
+                "id": 8,
+                "title": "VPC Private Connectivity: VPC Peering",
+                "lessons": 4,
+                "duration": "29 min"
+            },
+            {
+                "id": 9,
+                "title": "VPC Private Connectivity: VPC Endpoint & PrivateLink",
+                "lessons": 18,
+                "duration": "2 h 32 min"
+            },
+            {
+                "id": 10,
+                "title": "Transit Gateway",
+                "lessons": 19,
+                "duration": "2 h 45 min"
+            },
+            {
+                "id": 11,
+                "title": "Hybrid Network Basics",
+                "lessons": 4,
+                "duration": "31 min"
+            },
+            {
+                "id": 12,
+                "title": "AWS Site-to-Site VPN",
+                "lessons": 14,
+                "duration": "2 h 14 min"
+            },
+            {
+                "id": 13,
+                "title": "AWS Client VPN",
+                "lessons": 3,
+                "duration": "37 min"
+            },
+            {
+                "id": 14,
+                "title": "Direct Connect (DX)",
+                "lessons": 33,
+                "duration": "4 h 33 min"
+            },
+            {
+                "id": 15,
+                "title": "AWS Cloud WAN",
+                "lessons": 7,
+                "duration": "1 h 17 min"
+            },
+            {
+                "id": 16,
+                "title": "VPC Lattice",
+                "lessons": 8,
+                "duration": "58 min"
+            },
+            {
+                "id": 17,
+                "title": "CloudFront",
+                "lessons": 14,
+                "duration": "1 h 12 min"
+            },
+            {
+                "id": 18,
+                "title": "Elastic Load Balancers",
+                "lessons": 17,
+                "duration": "1 h 22 min"
+            },
+            {
+                "id": 19,
+                "title": "Route 53",
+                "lessons": 31,
+                "duration": "3 h"
+            },
+            {
+                "id": 20,
+                "title": "AWS Network Security Services",
+                "lessons": 16,
+                "duration": "2 h 53 min"
+            },
+            {
+                "id": 21,
+                "title": "Amazon EKS Networking",
+                "lessons": 10,
+                "duration": "1 h 49 min"
+            },
+            {
+                "id": 22,
+                "title": "AWS Networking Management & Governance",
+                "lessons": 6,
+                "duration": "1 h 1 min"
+            },
+            {
+                "id": 23,
+                "title": "Additional Topics",
+                "lessons": 5,
+                "duration": "42 min"
+            },
+            {
+                "id": 24,
+                "title": "Final Section - Congratulations!",
+                "lessons": 6,
+                "duration": "16 min"
+            }
+        ]
+    }
+}

@@ -353,169 +353,326 @@
       {
         "date": "24 dic - 30 dic 2026",
         "phase": "Q3 · Mes 7 — Fundamentos Cloud + AWS",
-        "title": "Semana 27: Cloud computing concepts",
+        "title": "Semana 27: Cloud computing concepts + Setup",
         "bullets": [
-          "📘 IaaS, PaaS, SaaS; pública/privada/híbrida",
-          "📘 Beneficios cloud, modelo de costos (CAPEX vs OPEX)",
-          "📘 AWS Global Infrastructure: regiones, AZs, edge"
+          "📘 IaaS, PaaS, SaaS; pública/privada/híbrida; modelo de costos (CAPEX vs OPEX)",
+          "📘 AWS Global Infrastructure: regiones, AZs, edge locations",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 1: Introducción al curso · Módulo 3: Empezando con AWS",
+          "📺 [Python Programming for AWS - Learn Python with AWS and Boto3] Módulo 1: Let's Get Started — setup Python + AWS CLI",
+          "🛠 Crear cuenta AWS con MFA, billing alerts ($5, $20)"
         ],
-        "isHandsOn": false,
+        "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "Python Programming for AWS - Learn Python with AWS and Boto3"
+        ]
       },
       {
         "date": "31 dic - 06 ene 2027",
         "phase": "Q3 · Mes 7 — Fundamentos Cloud + AWS",
-        "title": "Semana 28: AWS account + IAM",
+        "title": "Semana 28: IAM completo + SDK",
         "bullets": [
-          "📘 Crear cuenta AWS con MFA, billing alerts ($5, $20)",
-          "📘 IAM: users, groups, roles, policies, password policy",
-          "🛠 Crear usuario IAM con permisos limitados + access keys"
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 4: IAM y CLI de AWS — users, groups, roles, policies, MFA, password policy",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 13: SDK de AWS, roles y políticas de IAM",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 26: IAM Avanzado — identity federation, STS, Organizations, SCPs",
+          "📺 [Python Programming for AWS - Learn Python with AWS and Boto3] Módulo 2: AWS Fundamentals [OPTIONAL] — refuerzo conceptual desde perspectiva Python",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 10: Security, Identity & Compliance — contexto Data Engineer",
+          "🛠 Crear usuario IAM con permisos limitados + access keys + configurar AWS CLI profiles"
         ],
         "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "Python Programming for AWS - Learn Python with AWS and Boto3",
+          "AWS Certified Data Engineer Associate 2026 - Hands On!"
+        ]
       },
       {
         "date": "07 ene - 13 ene 2027",
         "phase": "Q3 · Mes 7 — Fundamentos Cloud + AWS",
-        "title": "Semana 29: Compute + Storage",
+        "title": "Semana 29: EC2 completo",
         "bullets": [
-          "📘 EC2 (tipos, AMIs, key pairs, security groups)",
-          "📘 S3 (buckets, objects, storage classes, versioning)",
-          "🛠 Lanzar EC2 t2.micro, SSH, instalar nginx",
-          "🛠 Subir archivos a S3 con AWS CLI"
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 5: Fundamentos de EC2 — tipos de instancia, AMIs, key pairs, security groups, user data",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 6: EC2 nivel Solutions Architect — spot, reserved, dedicated hosts, placement groups",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 7: Almacenamiento EC2 — EBS (tipos, snapshots), EFS, FSx, instance store",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 6: Compute — perspectiva de Data Engineer (Lambda, Batch, Fargate)",
+          "🛠 Lanzar EC2 t2.micro, SSH, instalar nginx; crear snapshot EBS; montar EFS"
         ],
         "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "AWS Certified Data Engineer Associate 2026 - Hands On!"
+        ]
       },
       {
         "date": "14 ene - 20 ene 2027",
         "phase": "Q3 · Mes 7 — Fundamentos Cloud + AWS",
-        "title": "Semana 30: Databases AWS",
+        "title": "Semana 30: S3 completo + boto3 S3",
         "bullets": [
-          "📘 RDS (engines, multi-AZ, read replicas)",
-          "📘 DynamoDB (intro), Aurora, ElastiCache",
-          "🛠 Crear RDS PostgreSQL, conectar desde local"
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 12: Introducción a S3 — buckets, objects, storage classes, versioning",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 14: Amazon S3 avanzado — replication, lifecycle, event notifications",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 15: Seguridad de S3 — bucket policies, ACLs, presigned URLs, encryption (SSE-S3, SSE-KMS, DSSE)",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 3: Storage — profundizar en S3, Glacier tiers, Intelligent-Tiering para Data Engineering",
+          "📺 [Python Programming for AWS - Learn Python with AWS and Boto3] Módulo 4: AWS Services using Python — S3 con boto3 (upload, download, list, delete)",
+          "🛠 Script Python boto3: listar buckets, subir/bajar archivos, aplicar lifecycle; implementar particionamiento Hive-style"
         ],
         "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "AWS Certified Data Engineer Associate 2026 - Hands On!",
+          "Python Programming for AWS - Learn Python with AWS and Boto3"
+        ]
       },
       {
         "date": "21 ene - 27 ene 2027",
         "phase": "Q3 · Mes 8 — Servicios AWS core",
-        "title": "Semana 31: Networking AWS",
+        "title": "Semana 31: Bases de datos AWS completas",
         "bullets": [
-          "📘 VPC, subnets (públicas/privadas), route tables, IGW, NAT",
-          "📘 Security Groups vs NACLs, Route 53, CloudFront",
-          "🛠 Crear VPC custom con 2 AZs"
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 9: RDS + Aurora + ElastiCache — engines, multi-AZ, read replicas, Aurora Global",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 4: Database — DynamoDB profundo (GSI, LSI, streams, DAX), Redshift intro, DocumentDB, Neptune, Timestream, MemoryDB",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 22: Bases de datos en AWS — panorama general y cuándo usar cada una",
+          "🛠 Crear RDS PostgreSQL → conectar desde local; CRUD DynamoDB con Python boto3"
         ],
         "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "AWS Certified Data Engineer Associate 2026 - Hands On!"
+        ]
       },
       {
         "date": "28 ene - 03 feb 2027",
         "phase": "Q3 · Mes 8 — Servicios AWS core",
-        "title": "Semana 32: Serverless + monitoring",
+        "title": "Semana 32: Networking VPC base + ELB/ASG",
         "bullets": [
-          "📘 Lambda (triggers, layers, límites)",
-          "📘 CloudWatch (logs, metrics, alarms), CloudTrail",
-          "🛠 Lambda Python que procesa archivo subido a S3"
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 8: Alta disponibilidad y escalabilidad — ELB (ALB, NLB, GWLB), ASG (políticas, warm-up)",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 28: Networking VPC — subnets, route tables, IGW, NAT, VPC Endpoints, Peering, Flow Logs",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 3: Amazon VPC Fundamentals — profundización: CIDR, ENI, security groups vs NACLs avanzado",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 4: Additional VPC Features — IPAM, IPv6, Egress-Only IGW",
+          "🛠 Crear VPC custom con 2 AZs + subnets públicas/privadas + NAT Gateway + ALB"
         ],
         "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "[NEW] AWS Certified Advanced Networking Specialty 2026"
+        ]
       },
       {
         "date": "04 feb - 10 feb 2027",
         "phase": "Q3 · Mes 8 — Servicios AWS core",
-        "title": "Semana 33: boto3 + AWS CLI",
+        "title": "Semana 33: DNS + CDN + Load Balancers avanzados",
         "bullets": [
-          "📘 AWS CLI: profiles, comandos esenciales",
-          "📘 boto3 SDK Python: clients vs resources, paginators",
-          "🛠 Script Python que lista todos los S3 buckets y su tamaño"
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 10: Route 53 — record types, routing policies (simple, weighted, latency, failover, geolocation)",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 19: Route 53 avanzado — Traffic Flow, DNSSEC, DNS Firewall, Resolver, hybrid DNS",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 16: CloudFront + Global Accelerator",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 17: CloudFront — comportamientos, OAI/OAC, Lambda@Edge, funciones, WAF integration",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 18: Elastic Load Balancers — ALB avanzado (listener rules, target groups), NLB, GWLB, cross-zone",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 5: VPC DNS and DHCP — Route 53 Resolver endpoints, DHCP Option Sets",
+          "🛠 Configurar Route 53 con failover + CloudFront distribution con S3 origin"
         ],
         "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "[NEW] AWS Certified Advanced Networking Specialty 2026"
+        ]
       },
       {
         "date": "11 feb - 17 feb 2027",
         "phase": "Q3 · Mes 8 — Servicios AWS core",
-        "title": "Semana 34: Well-Architected Framework",
+        "title": "Semana 34: VPC Avanzado — Conectividad privada + Híbrida",
         "bullets": [
-          "📘 6 pilares: operational excellence, security, reliability, performance, cost, sustainability",
-          "📘 Shared responsibility model",
-          "📘 Whitepaper: AWS Well-Architected"
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 6: Network Performance & Optimization — Placement Groups, ENA, SR-IOV, Jumbo Frames",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 7: VPC Traffic Monitoring — VPC Flow Logs, Traffic Mirroring, Reachability Analyzer",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 8: VPC Peering — transitive routing, mismo-cuenta vs cross-account",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 9: VPC Endpoint & PrivateLink — Interface Endpoints, Gateway Endpoints, Endpoint Services",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 10: Transit Gateway — attachments, route tables, VPN over TGW, multicast",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulos 11-13: Hybrid Network Basics + Site-to-Site VPN + Client VPN",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 14: Direct Connect (DX) — conexiones dedicadas, hosted, LAG, VIF, Direct Connect Gateway",
+          "🛠 Crear VPC Endpoint para S3; simular arquitectura hub-and-spoke con TGW (diagrama)"
         ],
-        "isHandsOn": false,
+        "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "[NEW] AWS Certified Advanced Networking Specialty 2026"
+        ]
       },
       {
         "date": "18 feb - 24 feb 2027",
-        "phase": "Q3 · Mes 9 — DE concepts + cert CLF-C02",
-        "title": "Semana 35: Data Engineering concepts",
+        "phase": "Q3 · Mes 8 — Servicios AWS core",
+        "title": "Semana 35: Serverless + Containers + Python automation",
         "bullets": [
-          "📘 ETL vs ELT, batch vs streaming",
-          "📘 Data Lake vs Data Warehouse vs Lakehouse",
-          "📘 Arquitectura Medallion (bronze/silver/gold)"
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 18: Aplicaciones desacoplamiento — SQS, SNS, Kinesis (intro), Active MQ",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 19: Containers — ECS, Fargate, ECR, EKS (intro)",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 20: Serverless desde arquitecto — Lambda profundo, API Gateway, DynamoDB, Cognito, AppSync",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 21: Arquitecturas serverless — casos de uso reales",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 7: Containers — ECS y Fargate en contexto DE",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 21: Amazon EKS Networking — CNI, VPC-native pods, Load Balancers para K8s",
+          "📺 [Python Programming for AWS - Learn Python with AWS and Boto3] Módulo 5: Automating AWS Tasks with Lambda — triggers (S3, SQS, DynamoDB Streams, EventBridge)",
+          "📺 [Python Programming for AWS - Learn Python with AWS and Boto3] Módulo 6: Advanced AWS and Python Topics — Step Functions, SSM, Secrets Manager con Python",
+          "🛠 Lambda Python que procesa archivos subidos a S3; DAG simple con EventBridge + Lambda + SQS"
         ],
-        "isHandsOn": false,
+        "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "AWS Certified Data Engineer Associate 2026 - Hands On!",
+          "[NEW] AWS Certified Advanced Networking Specialty 2026",
+          "Python Programming for AWS - Learn Python with AWS and Boto3"
+        ]
       },
       {
         "date": "25 feb - 03 mar 2027",
-        "phase": "Q3 · Mes 9 — DE concepts + cert CLF-C02",
-        "title": "Semana 36: Proyectos AWS prácticos",
+        "phase": "Q3 · Mes 8 — Servicios AWS core",
+        "title": "Semana 36: Seguridad + Monitoring + boto3 avanzado",
         "bullets": [
-          "🛠 **Proyecto 6: App serverless** (S3 + Lambda + DynamoDB + API Gateway)",
-          "🛠 **Proyecto 7: Backup automatizado** con boto3 + lifecycle a Glacier"
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 27: Seguridad y cifrado — KMS (CMK, key rotation, grants), SSM Parameter Store, CloudHSM, Shield, WAF, Macie, GuardDuty",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 25: CloudWatch + CloudTrail + Config — logs, metrics, alarms, dashboards, EventBridge, Config Rules",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 12: Management & Governance — Control Tower, Organizations, Service Catalog, Trusted Advisor, Cost Explorer",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 20: AWS Network Security Services — Network Firewall, Firewall Manager, AWS Shield en redes",
+          "📺 [Python Programming for AWS - Learn Python with AWS and Boto3] Módulo 7: Leveraging Tools — AWS SAM, CDK intro, LocalStack",
+          "🛠 Script boto3: monitorear costos + crear alertas CloudWatch + cifrar S3 con KMS CMK"
         ],
         "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "AWS Certified Data Engineer Associate 2026 - Hands On!",
+          "[NEW] AWS Certified Advanced Networking Specialty 2026",
+          "Python Programming for AWS - Learn Python with AWS and Boto3"
+        ]
       },
       {
         "date": "04 mar - 10 mar 2027",
-        "phase": "Q3 · Mes 9 — DE concepts + cert CLF-C02",
-        "title": "Semana 37: Repaso CLF-C02 (parte 1)",
+        "phase": "Q3 · Mes 9 — Servicios de datos AWS + cert prep",
+        "title": "Semana 37: Almacenamiento + Migración + Fundamentos DE",
         "bullets": [
-          "🧪 TutorialsDojo Practice Test 1 + 2 (analizar errores)",
-          "📘 Revisar áreas débiles"
-        ],
-        "isHandsOn": false,
-        "durationHours": 20,
-        "unlockable": true
-      },
-      {
-        "date": "11 mar - 17 mar 2027",
-        "phase": "Q3 · Mes 9 — DE concepts + cert CLF-C02",
-        "title": "Semana 38: Repaso CLF-C02 (parte 2)",
-        "bullets": [
-          "🧪 TutorialsDojo Practice Test 3-6",
-          "📘 Final cheat sheet de servicios"
-        ],
-        "isHandsOn": false,
-        "durationHours": 20,
-        "unlockable": true
-      },
-      {
-        "date": "18 mar - 24 mar 2027",
-        "phase": "Q3 · Mes 9 — DE concepts + cert CLF-C02",
-        "title": "Semana 39: Examen + descanso",
-        "bullets": [
-          "✅ **🎓 EXAMEN: AWS Cloud Practitioner (CLF-C02)**",
-          "✍️ Publicar logro en LinkedIn",
-          "🌴 1-2 días de descanso"
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 17: Extras de almacenamiento — Storage Gateway, DataSync, Snow Family, Transfer Family",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 29: Recuperación de desastres + migraciones — RPO/RTO, DMS, MGN, MAT",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 5: Migration & Transfer — DMS (full load + CDC), DataSync, Transfer Family en contexto DE",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 2: Data Engineering Fundamentals — ETL vs ELT, batch vs streaming, arquitecturas de datos",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 11: Arquitectura clásica + Módulo 30: Arquitecturas adicionales + Módulo 31: Otros servicios",
+          "📘 Data Lake vs Data Warehouse vs Lakehouse; Arquitectura Medallion (bronze/silver/gold)",
+          "🛠 Configurar DMS para migrar datos PostgreSQL local → RDS"
         ],
         "isHandsOn": true,
         "durationHours": 20,
-        "unlockable": true
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "AWS Certified Data Engineer Associate 2026 - Hands On!"
+        ]
+      },
+      {
+        "date": "11 mar - 17 mar 2027",
+        "phase": "Q3 · Mes 9 — Servicios de datos AWS + cert prep",
+        "title": "Semana 38: Analytics AWS — Glue, Athena, Lake Formation, Redshift, EMR",
+        "bullets": [
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 8 (parte 1): Glue (Data Catalog, crawlers, jobs PySpark/Python Shell, Glue Studio), Athena (queries, CTAS, workgroups, Iceberg), Lake Formation (permisos finos, blueprints, tag-based access)",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 23: Datos y analíticas — panorama Athena, Redshift, OpenSearch, QuickSight, Glue (nivel SAA)",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 8 (parte 2): Redshift (arquitectura MPP, distribution styles, sort keys, Spectrum), EMR (clusters Spark/Hadoop, EMR Serverless)",
+          "🛠 Crawler Glue → Job ETL (S3 raw → Parquet) → consultar con Athena → visualizar en QuickSight"
+        ],
+        "isHandsOn": true,
+        "durationHours": 20,
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Data Engineer Associate 2026 - Hands On!",
+          "AWS Certified Solutions Architect Associate"
+        ]
+      },
+      {
+        "date": "18 mar - 24 mar 2027",
+        "phase": "Q3 · Mes 9 — Servicios de datos AWS + cert prep",
+        "title": "Semana 39: Streaming + Orquestación + Machine Learning AWS",
+        "bullets": [
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 9: Application Integration — Step Functions (state machines, ASL, integraciones nativas), EventBridge, MSK (Kafka gestionado), MWAA",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 8 (streaming): Kinesis Data Streams (shards, producers, consumers), Kinesis Firehose, Kinesis Data Analytics (SQL/Flink)",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 24: Machine Learning — Rekognition, Transcribe, Polly, Translate, Lex, SageMaker (overview)",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 13: Machine Learning — SageMaker profundo (training, deployment, Feature Store, Pipelines), Bedrock, Comprehend, Kendra",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 14: Developer Tools — CodePipeline, CodeBuild, CodeDeploy para CI/CD de pipelines",
+          "🛠 Producer Python → Kinesis Data Streams → Firehose → S3 Parquet; orquestar Glue + Lambda con Step Functions"
+        ],
+        "isHandsOn": true,
+        "durationHours": 20,
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Data Engineer Associate 2026 - Hands On!",
+          "AWS Certified Solutions Architect Associate"
+        ]
+      },
+      {
+        "date": "25 mar - 31 mar 2027",
+        "phase": "Q3 · Mes 9 — Servicios de datos AWS + cert prep",
+        "title": "Semana 40: Proyectos AWS prácticos integradores",
+        "bullets": [
+          "🛠 **Proyecto 6: App serverless** — API Gateway + Lambda + DynamoDB + S3 + Cognito + CloudFront",
+          "🛠 **Proyecto 7: Pipeline Data Lake básico** — S3 (raw/processed/analytics) + Glue ETL + Athena + QuickSight + Step Functions + boto3",
+          "📺 [AWS Certified Advanced Networking Specialty 2026] Módulo 15: AWS Cloud WAN + Módulo 16: VPC Lattice + Módulo 22: Networking Management & Governance + Módulo 23-24: Additional Topics & Final",
+          "📺 [AWS Certified Solutions Architect Associate] Módulo 32: Whitepapers y arquitecturas SAA + Módulo 33: Preparación examen + Módulo 34: Final",
+          "📺 [AWS Certified Data Engineer Associate 2026 - Hands On!] Módulo 15: Everything Else + Módulo 16: Practice Exams + Módulo 17: Wrapping Up",
+          "📺 [Python Programming for AWS - Learn Python with AWS and Boto3] Módulo 8: Additional Training",
+          "✅ Checkpoint: todos los módulos de los 4 cursos completados"
+        ],
+        "isHandsOn": true,
+        "durationHours": 20,
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "AWS Certified Data Engineer Associate 2026 - Hands On!",
+          "[NEW] AWS Certified Advanced Networking Specialty 2026",
+          "Python Programming for AWS - Learn Python with AWS and Boto3"
+        ]
+      },
+      {
+        "date": "01 abr - 07 abr 2027",
+        "phase": "Q3 · Mes 9 — Servicios de datos AWS + cert prep",
+        "title": "Semana 41: Well-Architected + Repaso SAA-C03",
+        "bullets": [
+          "📘 6 pilares: operational excellence, security, reliability, performance efficiency, cost optimization, sustainability",
+          "📘 Shared responsibility model + AWS compliance frameworks",
+          "🧪 TutorialsDojo SAA Practice Test 1 + 2 (analizar errores por dominio)",
+          "📘 Revisar áreas débiles: VPC, IAM, RDS, ELB, S3"
+        ],
+        "isHandsOn": false,
+        "durationHours": 20,
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate"
+        ]
+      },
+      {
+        "date": "08 abr - 14 abr 2027",
+        "phase": "Q3 · Mes 9 — Servicios de datos AWS + cert prep",
+        "title": "Semana 42: Repaso DEA-C01 + Examen SAA-C03",
+        "bullets": [
+          "🧪 TutorialsDojo DEA Practice Test 1 + 2 (analizar errores: Storage, Analytics, Security)",
+          "🧪 TutorialsDojo SAA Practice Test 3-5 (score objetivo ≥85% antes de programar examen)",
+          "📘 Cheat sheet final: servicios clave SAA + DEA",
+          "✅ **🎓 EXAMEN: AWS Solutions Architect Associate (SAA-C03)** — programar cuando score ≥85%",
+          "✍️ Publicar logro en LinkedIn"
+        ],
+        "isHandsOn": true,
+        "durationHours": 20,
+        "unlockable": true,
+        "courses": [
+          "AWS Certified Solutions Architect Associate",
+          "AWS Certified Data Engineer Associate 2026 - Hands On!"
+        ]
       },
       {
         "date": "25 mar - 31 mar 2027",

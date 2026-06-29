@@ -84,92 +84,106 @@ import { ProgressService } from '../../services/progress.service';
           </div>
         </div>
 
-        <!-- Rutas -->
-        <div class="space-y-6" *ngFor="let route of parsedRoutes">
+        <!-- Selector de Apartados (Tabs) -->
+        <div class="flex border-b border-gray-800 gap-6 mb-6">
+          <button *ngFor="let route of parsedRoutes"
+                  (click)="activeRouteCategory = route.category"
+                  class="pb-3 text-sm font-semibold border-b-2 transition-all relative"
+                  [ngClass]="activeRouteCategory === route.category ? 'border-purple-500 text-purple-400 font-bold' : 'border-transparent text-gray-400 hover:text-gray-200'">
+            {{ route.name }}
+          </button>
+        </div>
 
-          <!-- Phases / Sections -->
-          <div *ngFor="let phase of route.phases; let phaseIdx = index"
-               class="bg-gray-900/50 rounded-2xl border overflow-hidden transition-all duration-300"
-               [ngClass]="{
-                 'border-gray-800': !phase.isActive,
-                 'border-purple-700/50 shadow-[0_0_20px_rgba(147,51,234,0.1)]': phase.isActive,
-                 'border-emerald-700/30': phase.isCompleted
-               }">
+        <!-- Apartado Activo -->
+        <div class="space-y-6">
+          <ng-container *ngFor="let route of parsedRoutes">
+            <ng-container *ngIf="route.category === activeRouteCategory">
+              
+              <!-- Phases / Sections -->
+              <div *ngFor="let phase of route.phases; let phaseIdx = index"
+                   class="bg-gray-900/50 rounded-2xl border overflow-hidden transition-all duration-300"
+                   [ngClass]="{
+                     'border-gray-800': !phase.isActive,
+                     'border-purple-700/50 shadow-[0_0_20px_rgba(147,51,234,0.1)]': phase.isActive,
+                     'border-emerald-700/30': phase.isCompleted
+                   }">
 
-            <!-- Phase header (clickable collapse) -->
-            <button
-              class="w-full flex items-center justify-between p-5 text-left transition-colors hover:bg-gray-800/30"
-              (click)="togglePhase(route.category, phaseIdx)">
-              <div class="flex items-center gap-3 min-w-0">
-                <!-- Status icon -->
-                <div class="shrink-0">
-                  <div *ngIf="phase.isCompleted"
-                       class="w-7 h-7 rounded-full bg-emerald-500/20 border border-emerald-500/50 flex items-center justify-center">
-                    <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                <!-- Phase header (clickable collapse) -->
+                <button
+                  class="w-full flex items-center justify-between p-5 text-left transition-colors hover:bg-gray-800/30"
+                  (click)="togglePhase(route.category, phaseIdx)">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <!-- Status icon -->
+                    <div class="shrink-0">
+                      <div *ngIf="phase.isCompleted"
+                           class="w-7 h-7 rounded-full bg-emerald-500/20 border border-emerald-500/50 flex items-center justify-center">
+                        <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                        </svg>
+                      </div>
+                      <div *ngIf="phase.isActive && !phase.isCompleted"
+                           class="w-7 h-7 rounded-full bg-purple-500/20 border border-purple-500/60 flex items-center justify-center">
+                        <div class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></div>
+                      </div>
+                      <div *ngIf="!phase.isActive && !phase.isCompleted"
+                           class="w-7 h-7 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center">
+                        <svg class="w-3.5 h-3.5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <!-- Phase name -->
+                    <div class="min-w-0">
+                      <h3 class="font-semibold truncate"
+                          [ngClass]="{
+                            'text-emerald-400': phase.isCompleted,
+                            'text-purple-300': phase.isActive && !phase.isCompleted,
+                            'text-gray-600': !phase.isActive && !phase.isCompleted
+                          }">
+                        {{ phase.name }}
+                      </h3>
+                      <p class="text-xs mt-0.5"
+                         [ngClass]="{
+                           'text-emerald-600': phase.isCompleted,
+                           'text-gray-500': !phase.isCompleted
+                         }">
+                        {{ phase.completedItems }}/{{ phase.items.length }} completados
+                        <span *ngIf="phase.isCompleted"> · ✅ Completada</span>
+                        <span *ngIf="phase.isActive && !phase.isCompleted"> · ▶ En progreso</span>
+                        <span *ngIf="!phase.isActive && !phase.isCompleted"> · 🔒 Bloqueada</span>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Phase progress mini bar + chevron -->
+                  <div class="flex items-center gap-3 shrink-0 ml-4">
+                    <div class="hidden sm:block w-20 bg-gray-800 rounded-full h-1.5 overflow-hidden">
+                      <div class="h-1.5 rounded-full transition-all duration-500"
+                           [style.width.%]="phase.items.length > 0 ? (phase.completedItems / phase.items.length) * 100 : 0"
+                           [ngClass]="phase.isCompleted ? 'bg-emerald-500' : 'bg-purple-500'">
+                      </div>
+                    </div>
+                    <svg class="w-5 h-5 text-gray-500 transition-transform duration-200"
+                         [class.rotate-180]="expandedPhases[route.category + '_' + phaseIdx]"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                   </div>
-                  <div *ngIf="phase.isActive && !phase.isCompleted"
-                       class="w-7 h-7 rounded-full bg-purple-500/20 border border-purple-500/60 flex items-center justify-center">
-                    <div class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></div>
-                  </div>
-                  <div *ngIf="!phase.isActive && !phase.isCompleted"
-                       class="w-7 h-7 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center">
-                    <svg class="w-3.5 h-3.5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
-                    </svg>
-                  </div>
-                </div>
-                <!-- Phase name -->
-                <div class="min-w-0">
-                  <h3 class="font-semibold truncate"
-                      [ngClass]="{
-                        'text-emerald-400': phase.isCompleted,
-                        'text-purple-300': phase.isActive && !phase.isCompleted,
-                        'text-gray-600': !phase.isActive && !phase.isCompleted
-                      }">
-                    {{ phase.name }}
-                  </h3>
-                  <p class="text-xs mt-0.5"
-                     [ngClass]="{
-                       'text-emerald-600': phase.isCompleted,
-                       'text-gray-500': !phase.isCompleted
-                     }">
-                    {{ phase.completedItems }}/{{ phase.items.length }} completados
-                    <span *ngIf="phase.isCompleted"> · ✅ Completada</span>
-                    <span *ngIf="phase.isActive && !phase.isCompleted"> · ▶ En progreso</span>
-                    <span *ngIf="!phase.isActive && !phase.isCompleted"> · 🔒 Bloqueada</span>
-                  </p>
+                </button>
+
+                <!-- Phase items (collapsible) -->
+                <div *ngIf="expandedPhases[route.category + '_' + phaseIdx]"
+                     class="px-5 pb-5 pt-1 border-t border-gray-800/50">
+                  <app-checklist
+                    [category]="route.category"
+                    [items]="phase.items"
+                    (itemToggled)="onItemToggled()"
+                    (itemUnlocked)="onItemUnlocked($event, route, phase)">
+                  </app-checklist>
                 </div>
               </div>
-              <!-- Phase progress mini bar + chevron -->
-              <div class="flex items-center gap-3 shrink-0 ml-4">
-                <div class="hidden sm:block w-20 bg-gray-800 rounded-full h-1.5 overflow-hidden">
-                  <div class="h-1.5 rounded-full transition-all duration-500"
-                       [style.width.%]="phase.items.length > 0 ? (phase.completedItems / phase.items.length) * 100 : 0"
-                       [ngClass]="phase.isCompleted ? 'bg-emerald-500' : 'bg-purple-500'">
-                  </div>
-                </div>
-                <svg class="w-5 h-5 text-gray-500 transition-transform duration-200"
-                     [class.rotate-180]="expandedPhases[route.category + '_' + phaseIdx]"
-                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </div>
-            </button>
 
-            <!-- Phase items (collapsible) -->
-            <div *ngIf="expandedPhases[route.category + '_' + phaseIdx]"
-                 class="px-5 pb-5 pt-1 border-t border-gray-800/50">
-              <app-checklist
-                [category]="route.category"
-                [items]="phase.items"
-                (itemToggled)="onItemToggled()"
-                (itemUnlocked)="onItemUnlocked($event, route, phase)">
-              </app-checklist>
-            </div>
-          </div>
-
+            </ng-container>
+          </ng-container>
         </div>
 
         <!-- Secciones Adicionales del Roadmap -->
@@ -276,6 +290,7 @@ import { ProgressService } from '../../services/progress.service';
 export class StudyComponent implements OnInit {
 
   parsedRoutes: any[] = [];
+  activeRouteCategory = '';
   private rawData: any[] = [];
 
   fireStreak       = 0;
@@ -397,6 +412,10 @@ export class StudyComponent implements OnInit {
     this.globalPercent  = totalItems > 0 ? (completedTotal / totalItems) * 100 : 0;
 
     this.calculateTimeReduction(lastCompletedTaskIndex, totalItems);
+
+    if (this.parsedRoutes.length > 0 && !this.activeRouteCategory) {
+      this.activeRouteCategory = this.parsedRoutes[0].category;
+    }
   }
 
   private calculateTimeReduction(lastCompletedIdx: number, totalTasks: number) {
